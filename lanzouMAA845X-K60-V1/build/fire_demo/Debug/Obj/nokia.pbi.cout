@@ -1,222 +1,222 @@
-"F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\nokia.c"
+"E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\nokia.c"
 -std=c99
 -ferror-limit=100
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\nokia
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\nokia
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\calculation
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\calculation
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\ccd
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\ccd
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\isr
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\isr
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\main
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\app\main
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\alloc
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\alloc
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\assert
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\assert
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\io
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\io
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\printf
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\printf
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\queue
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\queue
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\startup
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\startup
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\stdlib
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\stdlib
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\uif
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\common\uif
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\MK60DZ10
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\MK60DZ10
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\common
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\common
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\fier_drivers_cfg
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\fier_drivers_cfg
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\include
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\include
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\ish
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\ish
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\k60_fire
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\headers\k60_fire
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\vectors
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\vectors
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\sysinit
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\sysinit
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\start
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\start
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\arm_cm4
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\arm_cm4
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\crt0
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\cpu\crt0
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\platforms
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\platforms
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\adc
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\adc
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\AT24C02
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\AT24C02
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\delay
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\delay
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\dma
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\dma
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\exti
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\exti
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\FTM
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\FTM
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\gpio
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\gpio
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\i2c
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\i2c
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\lptmr
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\lptmr
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\mcg
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\mcg
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\PIT
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\PIT
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\uart
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\uart
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\wdog
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\wdog
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\queue
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\drivers\queue
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB\CMSIS
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB\CMSIS
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB\FatFs
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\LIB\FatFs
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\Ports
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\Ports
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\Source
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\Source
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\App
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\App
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\App\CFG
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\src\uCOS-II\App\CFG
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\..\build
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\..\build
 -I
-D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc
 -I
-D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc\c
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc\c
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\nokia
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\nokia
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\calculation
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\calculation
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\ccd
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\ccd
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\isr
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\isr
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\app\main
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\app\main
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\alloc
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\alloc
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\assert
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\assert
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\io
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\io
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\printf
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\printf
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\queue
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\queue
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\startup
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\startup
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\stdlib
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\stdlib
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\common\uif
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\common\uif
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\MK60DZ10
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\MK60DZ10
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\common
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\common
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\fier_drivers_cfg
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\fier_drivers_cfg
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\include
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\include
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\ish
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\ish
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\headers\k60_fire
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\headers\k60_fire
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\vectors
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\vectors
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\sysinit
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\sysinit
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\start
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\start
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\arm_cm4
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\arm_cm4
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\cpu\crt0
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\cpu\crt0
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\platforms
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\platforms
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\adc
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\adc
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\AT24C02
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\AT24C02
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\delay
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\delay
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\dma
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\dma
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\exti
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\exti
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\FTM
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\FTM
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\gpio
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\gpio
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\i2c
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\i2c
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\lptmr
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\lptmr
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\mcg
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\mcg
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\PIT
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\PIT
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\uart
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\uart
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\wdog
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\wdog
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\drivers\queue
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\drivers\queue
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\LIB
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\LIB
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\LIB\CMSIS
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\LIB\CMSIS
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\LIB\FatFs
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\LIB\FatFs
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\uCOS-II
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\uCOS-II
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\uCOS-II\Ports
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\uCOS-II\Ports
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\uCOS-II\Source
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\uCOS-II\Source
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\uCOS-II\App
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\uCOS-II\App
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\src\uCOS-II\App\CFG
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\src\uCOS-II\App\CFG
 -I
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build
 -DIAR=1
 -DDEBUG=1
 -DTWR_K60N512=1
@@ -415,8 +415,8 @@ F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build
 -D__HAS_LOCATED_DECLARATION__=1
 -D__HAS_LOCATED_WITH_INIT__=1
 -D__IAR_COMPILERBASE__=593666
--D__DATE__="Nov 26 2014"
--D__TIME__="20:15:06"
+-D__DATE__="Nov 27 2014"
+-D__TIME__="21:06:28"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
@@ -441,8 +441,8 @@ F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build
 -D__EDG_SYSV=0
 -D__EDG_ANSIC=1
 -D__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED=1
--D_DLIB_CONFIG_FILE_HEADER_NAME="D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\INC\c\DLib_Config_Normal.h"
--D_DLIB_CONFIG_FILE_STRING="D:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 7.0\\arm\\INC\\c\\DLib_Config_Normal.h"
+-D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\INC\c\DLib_Config_Normal.h"
+-D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 7.0\\arm\\INC\\c\\DLib_Config_Normal.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM"
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )

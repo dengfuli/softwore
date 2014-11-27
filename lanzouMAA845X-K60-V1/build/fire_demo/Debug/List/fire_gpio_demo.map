@@ -1,87 +1,87 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.10.1.6676/W32 for ARM                 26/Nov/2014  21:40:39
+# IAR ELF Linker V7.10.1.6676/W32 for ARM                 27/Nov/2014  21:17:37
 # Copyright 2007-2014 IAR Systems AB.
 #
 #    Output file  =  
-#        F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Exe\fire_gpio_demo.out
+#        E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Exe\fire_gpio_demo.out
 #    Map file     =  
-#        F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\List\fire_gpio_demo.map
+#        E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\List\fire_gpio_demo.map
 #    Command line =  
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\adc.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\alloc.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\arm_cm4.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\assert.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\AT24C02.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\calculation.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\crt0.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\delay.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\dma.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\exti.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\FTM.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\gpio.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\i2c.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\io.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\isr.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\lptmr.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\main.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\mcg.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\memtest.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\MOTOR.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\nokia.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\PIT.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\power_display.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\printf.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\queue.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\start.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\startup.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\stdlib.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\sysinit.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\uart.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\uif.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\vectors.o"
-#        "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\wdog.o"
-#        -o "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Exe\fire_gpio_demo.out"
-#        --map "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\List\fire_gpio_demo.map"
-#        --config "F:\freescale\my
-#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\..\config
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\adc.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\alloc.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\arm_cm4.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\assert.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\AT24C02.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\calculation.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\crt0.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\delay.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\dma.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\exti.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\FTM.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\gpio.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\i2c.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\io.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\isr.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\lptmr.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\main.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\mcg.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\memtest.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\MOTOR.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\nokia.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\PIT.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\power_display.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\printf.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\queue.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\start.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\startup.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\stdlib.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\sysinit.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\uart.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\uif.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\vectors.o"
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\wdog.o" -o
+#        "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Exe\fire_gpio_demo.out"
+#        --map "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\List\fire_gpio_demo.map"
+#        --config "E:\Freescale\let it
+#        go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\..\config
 #        files\fire_ROM_K60N512.icf" --semihosting --entry __iar_program_start
 #        --vfe
 #
@@ -118,7 +118,7 @@ __SystemLibrary = DLib
   .noinit              ro code  0x00000410    0x3c  crt0.o [1]
                               - 0x0000044c    0x3c
 
-"P1", part 2 of 2:                          0x3650
+"P1", part 2 of 2:                          0x3644
   .text                ro code  0x0000044c   0x6e0  printf.o [1]
   .text                ro code  0x00000b2c    0x20  DblCmpEq.o [4]
   .text                ro code  0x00000b4c    0xb8  modf.o [4]
@@ -154,85 +154,85 @@ __SystemLibrary = DLib
   .text                ro code  0x00002dcc   0x484  isr.o [1]
   .data_init                    0x00003250    0x64  <Block>
     Initializer bytes  ro data  0x00003250    0x64  <for .data-1>
-  .rodata              const    0x000032b4    0x54  gpio.o [1]
-  .rodata              const    0x00003308    0x50  adc.o [1]
-  .rodata              const    0x00003358    0x50  FTM.o [1]
-  CodeRelocate                  0x000033a8    0x50  <Block>
-    Initializer bytes  ro data  0x000033a8    0x50  <for CodeRelocateRam-1>
-  .rodata              const    0x000033f8    0x48  assert.o [1]
-  .rodata              const    0x00003440    0x48  start.o [1]
-  .rodata              const    0x00003488    0x40  start.o [1]
-  .rodata              const    0x000034c8    0x3c  arm_cm4.o [1]
-  .rodata              const    0x00003504    0x38  arm_cm4.o [1]
-  .rodata              const    0x0000353c    0x30  vectors.o [1]
-  .rodata              const    0x0000356c    0x2c  start.o [1]
-  .rodata              const    0x00003598    0x28  start.o [1]
-  .rodata              const    0x000035c0    0x28  start.o [1]
-  .text                ro code  0x000035e8    0x28  data_init.o [5]
-  .iar.init_table      const    0x00003610    0x10  - Linker created -
-  .rodata              const    0x00003620    0x20  isr.o [1]
-  .rodata              const    0x00003640    0x20  start.o [1]
-  .rodata              const    0x00003660    0x20  start.o [1]
-  .rodata              const    0x00003680    0x20  start.o [1]
-  .rodata              const    0x000036a0    0x20  start.o [1]
-  .rodata              const    0x000036c0    0x20  start.o [1]
-  .rodata              const    0x000036e0    0x1c  start.o [1]
-  .rodata              const    0x000036fc    0x1c  start.o [1]
-  .rodata              const    0x00003718    0x1c  start.o [1]
-  .text                ro code  0x00003734    0x1a  cmain.o [5]
-  .text                ro code  0x0000374e     0x4  low_level_init.o [3]
-  .text                ro code  0x00003752     0x4  exit.o [3]
-  .text                ro code  0x00003758     0xa  cexit.o [5]
-  .text                ro code  0x00003764    0x14  exit.o [6]
-  .rodata              const    0x00003778    0x18  power_display.o [1]
-  .rodata              const    0x00003790    0x18  start.o [1]
-  .rodata              const    0x000037a8    0x18  start.o [1]
-  .rodata              const    0x000037c0    0x18  start.o [1]
-  .rodata              const    0x000037d8    0x18  start.o [1]
-  .rodata              const    0x000037f0    0x18  start.o [1]
-  .rodata              const    0x00003808    0x18  start.o [1]
-  .rodata              const    0x00003820    0x18  start.o [1]
-  .rodata              const    0x00003838    0x18  start.o [1]
-  .text                ro code  0x00003850    0x18  vectors.o [1]
-  .rodata              const    0x00003868    0x14  isr.o [1]
-  .rodata              const    0x0000387c    0x14  isr.o [1]
-  .rodata              const    0x00003890    0x14  start.o [1]
-  .rodata              const    0x000038a4    0x14  start.o [1]
-  .rodata              const    0x000038b8    0x14  start.o [1]
-  .rodata              const    0x000038cc    0x14  start.o [1]
-  .rodata              const    0x000038e0    0x14  start.o [1]
-  .rodata              const    0x000038f4    0x14  start.o [1]
-  .rodata              const    0x00003908    0x14  start.o [1]
-  .rodata              const    0x0000391c    0x14  start.o [1]
-  .rodata              const    0x00003930    0x10  isr.o [1]
-  .rodata              const    0x00003940    0x10  start.o [1]
-  .rodata              const    0x00003950    0x10  start.o [1]
-  .rodata              const    0x00003960    0x10  start.o [1]
-  .rodata              const    0x00003970    0x10  start.o [1]
-  .rodata              const    0x00003980    0x10  start.o [1]
-  .rodata              const    0x00003990    0x10  start.o [1]
-  .rodata              const    0x000039a0    0x10  start.o [1]
-  .rodata              const    0x000039b0    0x10  start.o [1]
-  .rodata              const    0x000039c0    0x10  start.o [1]
-  .rodata              const    0x000039d0    0x10  start.o [1]
-  .rodata              const    0x000039e0    0x10  start.o [1]
-  .rodata              const    0x000039f0    0x10  start.o [1]
-  .rodata              const    0x00003a00    0x10  start.o [1]
-  .text                ro code  0x00003a10    0x10  io.o [1]
+  .rodata              const    0x000032b4    0x50  gpio.o [1]
+  CodeRelocate                  0x00003304    0x50  <Block>
+    Initializer bytes  ro data  0x00003304    0x50  <for CodeRelocateRam-1>
+  .rodata              const    0x00003354    0x4c  adc.o [1]
+  .rodata              const    0x000033a0    0x4c  FTM.o [1]
+  .rodata              const    0x000033ec    0x48  assert.o [1]
+  .rodata              const    0x00003434    0x48  start.o [1]
+  .rodata              const    0x0000347c    0x40  start.o [1]
+  .rodata              const    0x000034bc    0x3c  arm_cm4.o [1]
+  .rodata              const    0x000034f8    0x38  arm_cm4.o [1]
+  .rodata              const    0x00003530    0x30  vectors.o [1]
+  .rodata              const    0x00003560    0x2c  start.o [1]
+  .rodata              const    0x0000358c    0x28  start.o [1]
+  .rodata              const    0x000035b4    0x28  start.o [1]
+  .text                ro code  0x000035dc    0x28  data_init.o [5]
+  .iar.init_table      const    0x00003604    0x10  - Linker created -
+  .rodata              const    0x00003614    0x20  isr.o [1]
+  .rodata              const    0x00003634    0x20  start.o [1]
+  .rodata              const    0x00003654    0x20  start.o [1]
+  .rodata              const    0x00003674    0x20  start.o [1]
+  .rodata              const    0x00003694    0x20  start.o [1]
+  .rodata              const    0x000036b4    0x20  start.o [1]
+  .rodata              const    0x000036d4    0x1c  start.o [1]
+  .rodata              const    0x000036f0    0x1c  start.o [1]
+  .rodata              const    0x0000370c    0x1c  start.o [1]
+  .text                ro code  0x00003728    0x1a  cmain.o [5]
+  .text                ro code  0x00003742     0x4  low_level_init.o [3]
+  .text                ro code  0x00003746     0x4  exit.o [3]
+  .text                ro code  0x0000374c     0xa  cexit.o [5]
+  .text                ro code  0x00003758    0x14  exit.o [6]
+  .rodata              const    0x0000376c    0x18  power_display.o [1]
+  .rodata              const    0x00003784    0x18  start.o [1]
+  .rodata              const    0x0000379c    0x18  start.o [1]
+  .rodata              const    0x000037b4    0x18  start.o [1]
+  .rodata              const    0x000037cc    0x18  start.o [1]
+  .rodata              const    0x000037e4    0x18  start.o [1]
+  .rodata              const    0x000037fc    0x18  start.o [1]
+  .rodata              const    0x00003814    0x18  start.o [1]
+  .rodata              const    0x0000382c    0x18  start.o [1]
+  .text                ro code  0x00003844    0x18  vectors.o [1]
+  .rodata              const    0x0000385c    0x14  isr.o [1]
+  .rodata              const    0x00003870    0x14  isr.o [1]
+  .rodata              const    0x00003884    0x14  start.o [1]
+  .rodata              const    0x00003898    0x14  start.o [1]
+  .rodata              const    0x000038ac    0x14  start.o [1]
+  .rodata              const    0x000038c0    0x14  start.o [1]
+  .rodata              const    0x000038d4    0x14  start.o [1]
+  .rodata              const    0x000038e8    0x14  start.o [1]
+  .rodata              const    0x000038fc    0x14  start.o [1]
+  .rodata              const    0x00003910    0x14  start.o [1]
+  .rodata              const    0x00003924    0x10  isr.o [1]
+  .rodata              const    0x00003934    0x10  start.o [1]
+  .rodata              const    0x00003944    0x10  start.o [1]
+  .rodata              const    0x00003954    0x10  start.o [1]
+  .rodata              const    0x00003964    0x10  start.o [1]
+  .rodata              const    0x00003974    0x10  start.o [1]
+  .rodata              const    0x00003984    0x10  start.o [1]
+  .rodata              const    0x00003994    0x10  start.o [1]
+  .rodata              const    0x000039a4    0x10  start.o [1]
+  .rodata              const    0x000039b4    0x10  start.o [1]
+  .rodata              const    0x000039c4    0x10  start.o [1]
+  .rodata              const    0x000039d4    0x10  start.o [1]
+  .rodata              const    0x000039e4    0x10  start.o [1]
+  .rodata              const    0x000039f4    0x10  start.o [1]
+  .text                ro code  0x00003a04    0x10  io.o [1]
+  .rodata              const    0x00003a14     0xc  start.o [1]
   .rodata              const    0x00003a20     0xc  start.o [1]
   .rodata              const    0x00003a2c     0xc  start.o [1]
   .rodata              const    0x00003a38     0xc  start.o [1]
-  .rodata              const    0x00003a44     0xc  start.o [1]
-  .text                ro code  0x00003a50     0xc  cstartup_M.o [5]
-  .rodata              const    0x00003a5c     0x8  start.o [1]
-  .rodata              const    0x00003a64     0x8  start.o [1]
-  .rodata              const    0x00003a6c     0x8  start.o [1]
-  .rodata              const    0x00003a74     0x8  start.o [1]
-  .rodata              const    0x00003a7c     0x8  start.o [1]
-  .rodata              const    0x00003a84     0x8  start.o [1]
-  .rodata              const    0x00003a8c     0x8  start.o [1]
-  .rodata              const    0x00003a94     0x8  start.o [1]
-                              - 0x00003a9c  0x3650
+  .text                ro code  0x00003a44     0xc  cstartup_M.o [5]
+  .rodata              const    0x00003a50     0x8  start.o [1]
+  .rodata              const    0x00003a58     0x8  start.o [1]
+  .rodata              const    0x00003a60     0x8  start.o [1]
+  .rodata              const    0x00003a68     0x8  start.o [1]
+  .rodata              const    0x00003a70     0x8  start.o [1]
+  .rodata              const    0x00003a78     0x8  start.o [1]
+  .rodata              const    0x00003a80     0x8  start.o [1]
+  .rodata              const    0x00003a88     0x8  start.o [1]
+                              - 0x00003a90  0x3644
 
 "P2", part 1 of 2:                            0xb4
   .data                         0x1fff0410    0x64  <Block>
@@ -302,15 +302,15 @@ Zero (__iar_zero_init3)
 
     Module            ro code  rw code  ro data  rw data
     ------            -------  -------  -------  -------
-F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj: [1]
-    FTM.o                 864                92       12
+E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj: [1]
+    FTM.o                 864                88       12
     PIT.o                 112
-    adc.o                 874                88       24
+    adc.o                 874                84       24
     arm_cm4.o             296               116
     assert.o               24                72
     calculation.o         104
     crt0.o                 60
-    gpio.o                196               124       40
+    gpio.o                196               120       40
     i2c.o               1 036                 8        8
     io.o                   16
     isr.o               1 156                88       26
@@ -326,7 +326,7 @@ F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\O
     vectors.o              24             1 088
     wdog.o                 56
     ----------------------------------------------------
-    Total:              9 926       80    2 988      165
+    Total:              9 926       80    2 976      165
 
 command line: [2]
     ----------------------------------------------------
@@ -371,7 +371,7 @@ shb_l.a: [6]
     Gaps                   10
     Linker created          8                16
 --------------------------------------------------------
-    Grand Total:       12 000       80    3 004      165
+    Grand Total:       12 000       80    2 992      165
 
 
 *******************************************************************************
@@ -386,11 +386,11 @@ Entry                      Address   Size  Type      Object
 .data$$Limit            0x1fff0474          --   Gb  - Linker created -
 .data_init$$Base        0x00003250          --   Gb  - Linker created -
 .data_init$$Limit       0x000032b4          --   Gb  - Linker created -
-?main                   0x00003735         Code  Gb  cmain.o [5]
+?main                   0x00003729         Code  Gb  cmain.o [5]
 ADCx                    0x1fff0410    0x8  Data  Gb  adc.o [1]
-ASSERT_FAILED_STR       0x000033f8   0x48  Data  Gb  assert.o [1]
-CodeRelocate$$Base      0x000033a8          --   Gb  - Linker created -
-CodeRelocate$$Limit     0x000033f8          --   Gb  - Linker created -
+ASSERT_FAILED_STR       0x000033ec   0x48  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x00003304          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00003354          --   Gb  - Linker created -
 CodeRelocateRam$$Base   0x1fff0474          --   Gb  - Linker created -
 CodeRelocateRam$$Limit  0x1fff04c4          --   Gb  - Linker created -
 DMA_CH0_Handler         0x00003189   0x22  Code  Gb  isr.o [1]
@@ -418,8 +418,8 @@ PORTD_IRQHandler        0x00002ef3  0x12e  Code  Gb  isr.o [1]
 PORTX                   0x1fff0438   0x14  Data  Gb  gpio.o [1]
 Pause                   0x000020d9   0x26  Code  Gb  i2c.o [1]
 PendSV_Handler          0x00002ee5    0x2  Code  Gb  isr.o [1]
-Region$$Table$$Base     0x00003610          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00003620          --   Gb  - Linker created -
+Region$$Table$$Base     0x00003604          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00003614          --   Gb  - Linker created -
 Reset_Handler           0x00000411         Code  Gb  crt0.o [1]
 SysTick_Handler         0x00002ee3    0x2  Code  Gb  isr.o [1]
 TIME0flag_10ms          0x1fff04f3    0x1  Data  Gb  isr.o [1]
@@ -447,24 +447,24 @@ __aeabi_f2iz            0x00002d39         Code  Gb  FltToS32.o [4]
 __aeabi_fmul            0x00002c61         Code  Gb  FltMul.o [4]
 __aeabi_i2d             0x00000c05         Code  Gb  I32ToDbl.o [4]
 __aeabi_ui2d            0x00000c19         Code  Gb  I32ToDbl.o [4]
-__cmain                 0x00003735         Code  Gb  cmain.o [5]
+__cmain                 0x00003729         Code  Gb  cmain.o [5]
 __code_start__ {Abs}    0x00000410          --   Gb  command line/config [2]
-__exit                  0x00003765   0x14  Code  Gb  exit.o [6]
+__exit                  0x00003759   0x14  Code  Gb  exit.o [6]
 __iar_d2uiz             0x00000f0d         Code  Gb  DblToI32.o [4]
 __iar_dadd              0x00000e0d         Code  Gb  DblAdd.o [4]
-__iar_data_init3        0x000035e9   0x28  Code  Gb  data_init.o [5]
+__iar_data_init3        0x000035dd   0x28  Code  Gb  data_init.o [5]
 __iar_dsub              0x00000f7d         Code  Gb  DblSub.o [4]
 __iar_dsubStart         0x00000f8f         Code  Gb  DblSub.o [4]
 __iar_modf              0x00000b5d         Code  Gb  modf.o [4]
 __iar_modfl             0x00000b5d         Code  Gb  modf.o [4]
-__iar_program_start     0x00003a51         Code  Gb  cstartup_M.o [5]
+__iar_program_start     0x00003a45         Code  Gb  cstartup_M.o [5]
 __iar_ui2d              0x00000c1d         Code  Gb  I32ToDbl.o [4]
 __iar_zero_init3        0x00000dd7   0x22  Code  Gb  zero_init3.o [5]
-__low_level_init        0x0000374f    0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x00003743    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x00000000  0x410  Data  Gb  vectors.o [1]
-_call_main              0x00003741         Code  Gb  cmain.o [5]
-_exit                   0x00003759         Code  Gb  cexit.o [5]
-_main                   0x0000374b         Code  Gb  cmain.o [5]
+_call_main              0x00003735         Code  Gb  cmain.o [5]
+_exit                   0x0000374d         Code  Gb  cexit.o [5]
+_main                   0x0000373f         Code  Gb  cmain.o [5]
 acc_ad_get              0x000027e5   0x5a  Code  Gb  calculation.o [1]
 acci2c_set              0x00002335   0xa8  Code  Gb  i2c.o [1]
 ad_ave10                0x00002a9f   0xa0  Code  Gb  adc.o [1]
@@ -477,10 +477,10 @@ common_startup          0x00001641   0xc0  Code  Gb  startup.o [1]
 core_clk_khz            0x1fff04dc    0x4  Data  Gb  sysinit.o [1]
 core_clk_mhz            0x1fff04e0    0x4  Data  Gb  sysinit.o [1]
 cpu_identify            0x00001217  0x20a  Code  Gb  start.o [1]
-default_isr             0x00003851   0x18  Code  Gb  vectors.o [1]
+default_isr             0x00003845   0x18  Code  Gb  vectors.o [1]
 disable_irq             0x000018f3   0x5e  Code  Gb  arm_cm4.o [1]
 enable_irq              0x0000185f   0x94  Code  Gb  arm_cm4.o [1]
-exit                    0x00003753    0x4  Code  Gb  exit.o [3]
+exit                    0x00003747    0x4  Code  Gb  exit.o [3]
 flash_identify          0x00001421   0xbe  Code  Gb  start.o [1]
 gpio_init               0x00001ec1   0xb6  Code  Gb  gpio.o [1]
 key10cout               0x1fff04ee    0x2  Data  Gb  isr.o [1]
@@ -499,7 +499,7 @@ main                    0x0000175d   0xfc  Code  Gb  main.o [1]
 mcg_div                 0x1fff0454    0x8  Data  Gb  mcg.o [1]
 modf                    0x00000b4d         Code  Gb  modf.o [4]
 modfl                   0x00000b4d         Code  Gb  modf.o [4]
-out_char                0x00003a11   0x10  Code  Gb  io.o [1]
+out_char                0x00003a05   0x10  Code  Gb  io.o [1]
 pit_init                0x00001f85   0x62  Code  Gb  PIT.o [1]
 pll_init                0x00001989  0x2f4  Code  Gb  mcg.o [1]
 power                   0x1fff04d4    0x4  Data  Gb  power_display.o [1]
@@ -527,7 +527,7 @@ y                       0x1fff0503    0x1  Data  Gb  main.o [1]
 z                       0x1fff0504    0x1  Data  Gb  main.o [1]
 
 
-[1] = F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj
+[1] = E:\Freescale\let it go\softwore\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tl.a
@@ -536,7 +536,7 @@ z                       0x1fff0504    0x1  Data  Gb  main.o [1]
 
   12 000 bytes of readonly  code memory
       80 bytes of readwrite code memory
-   3 004 bytes of readonly  data memory
+   2 992 bytes of readonly  data memory
      165 bytes of readwrite data memory
 
 Errors: none
