@@ -9,7 +9,11 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
+<<<<<<< HEAD
+Checksum=-1307049487
+=======
 Checksum=-1818162040
+>>>>>>> 672d24dbdcd8de189109b16be8a175d4bbaef794
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -102,7 +106,8 @@ mode=0
 Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\landzoV3.0}.13.26" 0 0 1 "" 0 "" 0
 Count=1
 [Aliases]
-A0=_ "C:\Users\wangjiayu\Desktop\landzoMAA845X-K60-V1\src\common\printf.c" ""
-A1=_ "E:\study\fire_Kinetis_ДњТыV2.2\src\cpu\crt0.s" ""
-Count=2
+A0=_ "C:\Users\Thinkpd\Desktop\softwore\lanzouMAA845X-K60-V1\src\common\printf.c" ""
+A1=_ "C:\Users\wangjiayu\Desktop\landzoMAA845X-K60-V1\src\common\printf.c" ""
+A2=_ "E:\study\fire_Kinetis_ДњТыV2.2\src\cpu\crt0.s" ""
+Count=3
 SuppressDialog=1

@@ -8,7 +8,50 @@
 extern u8 y;
 extern u8 z;
 extern u8 XYZ_CFG_Data;
+/*********************************************************** 
+函数名称：LCD_KEY_init
+函数功能：
+入口参数：
+出口参数：无 
+备 注： 
+***********************************************************/
+void LCD_KEY_init (void)
+{
+    gpio_init (PORTC , 6,  GPO, HIGH) ;
+    gpio_init (PORTC , 7,  GPO, HIGH) ;
+    gpio_init (PORTC , 8,  GPO, HIGH) ;
+    gpio_init (PORTC , 9,  GPO, HIGH) ;
+    gpio_init (PORTC , 11, GPO, HIGH) ;
+    LCD_init(); 
+}
+/*********************************************************** 
+函数名称：LCDTIME
+函数功能：液晶显示和
+入口参数：c	:  显示的字符
+出口参数：无 
+备 注： 
+***********************************************************/
 
+void LCDTIME(void)
+{
+               u8 a,b,c;
+              
+              
+              a=(u8)((power_get()/100)+48);
+              b=(u8)(((power_get()%100)/10)+48);
+              c=(u8)((power_get()%10)+48);
+              
+              
+          
+              
+              LCD_set_XY(0,0);
+              
+              LCD_write_char(a);
+              LCD_write_char('.');
+              LCD_write_char(b);
+              LCD_write_char(c);
+              LCD_write_char('V');
+}
 
 /*********************************************************** 
 函数名称：AngleAcceleration_init   

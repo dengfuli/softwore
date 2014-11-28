@@ -11,6 +11,7 @@
 
 float angle_get(void);
 void acc_ad_get(void);
-
+void LCD_KEY_init (void);
 void AngularAD_get(void);
+void LCDTIME(void);
 #endif

@@ -109,6 +109,9 @@ const u8 font5x8[]={
 0x00, 0x41, 0x36, 0x08, 0x00,   // }     94
 0x08, 0x10, 0x08, 0x04, 0x08    // ~     95
 }; 
+const u8 write_chinese[][24]={
+  0x00,0xFC,0x94,0x94,0x94,0xFF,0x94,0x94,0x94,0xFE,0x04,0x00,0x00,0x01,0x00,0x00,0x00,0x03,0x04,0x04,0x04,0x04,0x06,0x00,   //电
+};
 /*-----------------------------------------------------------------------
 delay_1us         : 延时程序
 编写日期          ：2012-11-01 
@@ -251,7 +254,93 @@ void LCD_write_char(u8 c)
     }
     LCD_write_byte(0, 1);
 }
+/*-----------------------------------------------------------------------
+LCD_write_english_String  : 英文字符串显示函数
+
+输入参数：*s      ：英文字符串指针；
+          X、Y    : 显示字符串的位置,x 0-83 ,y 0-5
+
+编写日期          ：2004-8-10 
+最后修改日期      ：2004-8-10 		
+-----------------------------------------------------------------------*/
+void LCD_write_english_string(u8 X, u8 Y, u8 *s)   //u8 是 unsigned char u16 是 unsigned short  u32 是 unsigned int
+  {
+    LCD_set_XY(X,Y);
+    while (*s) 
+      {
+	 LCD_write_char(*s);
+	 s++;
+      }
+  }
+/*-----------------------------------------------------------------------
+LCD_write_chinese_string: 在LCD上显示汉字
+
+输入参数：X、Y    ：显示汉字的起始X、Y坐标；
+          ch_with ：汉字点阵的宽度
+          num     ：显示汉字的个数；  
+          line    ：汉字点阵数组中的起始行数
+          row     ：汉字显示的行间距
+编写日期          ：2004-8-11 
+最后修改日期      ：2004-8-12 
+测试：
+	LCD_write_chi(0,0,12,7,0,0);
+	LCD_write_chi(0,2,12,7,0,0);
+	LCD_write_chi(0,4,12,7,0,0);	
+-----------------------------------------------------------------------*/                        
+void LCD_write_chinese_string(u8 X, u8 Y, u8 ch_with,u8 num, u8 line, u8 row)
+  {
+    u8 i,n;
+    
+    LCD_set_XY(X,Y);                             //设置初始位置
+    
+    for (i=0;i<num;)
+      {
+      	for (n=0; n<ch_with*2; n++)              //写一个汉字
+      	  { 
+      	    if (n==ch_with)                      //写汉字的下半部分
+      	      {
+      	        if (i==0) LCD_set_XY(X,Y+1);
+      	        else
+      	           LCD_set_XY((X+(ch_with+row)*i),Y+1);
+              }
+      	    LCD_write_byte(write_chinese[line+i][n],1);
+      	  }
+      	i++;
+      	LCD_set_XY((X+(ch_with+row)*i),Y);
+      }
+  }
+  
 
 
+/*-----------------------------------------------------------------------
+LCD_draw_map      : 位图绘制函数
+
+输入参数：X、Y    ：位图绘制的起始X、Y坐标；
+          *map    ：位图点阵数据；
+          Pix_x   ：位图像素（长）
+          Pix_y   ：位图像素（宽）
+
+编写日期          ：2004-8-13
+最后修改日期      ：2004-8-13 
+-----------------------------------------------------------------------*/
+void LCD_draw_bmp_pixel(u8 X,u8 Y,u8 *map,u8 Pix_x,u8 Pix_y)
+  {
+    u32 i,n;
+    u8 row;
+    
+    if (Pix_y%8==0) row=Pix_y/8;      //计算位图所占行数
+      else
+        row=Pix_y/8+1;
+    
+    for (n=0;n<row;n++)
+      {
+      	LCD_set_XY(X,Y);
+        for(i=0; i<Pix_x; i++)
+          {
+            LCD_write_byte(map[i+n*Pix_x], 1);
+          }
+        Y++;                         //换行
+      }      
+  }
 
 

@@ -44,7 +44,7 @@ void main()
       DisableInterrupts;                             //禁止总中断 
       
 
-   //自行添加代码
+      LCD_KEY_init();
  
       uart_init (UART5 , 115200);                      //初始化UART0，输出脚PTA15，输入脚PTA14，串口频率 9600
       gpio_init (PORTA , 17, GPO,HIGH); 
@@ -70,7 +70,7 @@ void main()
     {
      
          power_get();
-       
+         LCDTIME();
       
      //  AngularAD_get();
       /*********************
