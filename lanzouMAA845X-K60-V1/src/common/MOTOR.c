@@ -26,10 +26,10 @@ void balance_duty(void)
 void carrun(void)
 {
    
-    FTM_PWM_Duty(RIGHT_G_FTM,RIGHT_G_CH,motor.right_duty);//right go PTD5
-    FTM_PWM_Duty(RIGHT_B_FTM,RIGHT_B_CH,0);//right back  PTD7
-    FTM_PWM_Duty(LEFT_G_FTM,LEFT_G_CH,motor.left_duty);//left  go  PTD4
-    FTM_PWM_Duty(LEFT_B_FTM,LEFT_B_CH,0);
+    FTM_PWM_Duty(RIGHT_G_FTM,RIGHT_G_CH,0);//right go PTD5
+    FTM_PWM_Duty(RIGHT_B_FTM,RIGHT_B_CH,motor.right_duty);//right back  PTD7
+    FTM_PWM_Duty(LEFT_G_FTM,LEFT_G_CH,0);//left  go  PTD4
+    FTM_PWM_Duty(LEFT_B_FTM,LEFT_B_CH,motor.left_duty);
 }
 /*****按键控制小车速度********/
 int DANG = 0;
@@ -54,7 +54,7 @@ void key_speed(void)
             DANG--;
        }
    }
-   LCD_set_XY(0,2);
+   LCD_set_XY(77,0);
    u8 tem = (u8)(DANG+48);
    LCD_write_char(tem);    
     motor.left_duty = DANG*10;
