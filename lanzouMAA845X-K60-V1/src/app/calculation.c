@@ -5,41 +5,9 @@
 #include "MOTOR.h"
 
 
-/*********************************************************** 
-函数名称：LCD_KEY_init
-函数功能：
-入口参数：
-出口参数：无 
-备 注： 
-***********************************************************/
-void LCD_KEY_init (void)
-{
-    gpio_init (PORTC , 6,  GPO, HIGH) ;
-    gpio_init (PORTC , 7,  GPO, HIGH) ;
-    gpio_init (PORTC , 8,  GPO, HIGH) ;
-    gpio_init (PORTC , 9,  GPO, HIGH) ;
-    gpio_init (PORTC , 11, GPO, HIGH) ;
-    LCD_init(); 
-}
-/*********************************************************** 
-函数名称：LCDTIME
-函数功能：液晶显示和
-入口参数：c	:  显示的字符
-出口参数：无 
-备 注： 
-***********************************************************/
 
-void LCDTIME(void)
-{
-      /*  
-        LCD_write_chinese_string(0,0,12,7,0,0);//电
-	LCD_write_chinese_string(12,0,12,7,1,0);//源
-	LCD_write_chinese_string(24,0,12,7,2,0);//电
-        LCD_write_chinese_string(36,0,12,7,3,0);//压
-       */
-        power_display();
-        angle_display();
-}
+
+
 
 /*********************************************************** 
 函数名称：AngleAcceleration_init   

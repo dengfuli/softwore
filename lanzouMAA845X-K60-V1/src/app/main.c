@@ -22,11 +22,6 @@
 *********************************************************************************************************
 */
 
-
-
-//xyz_status xyz;
-
-
 extern u8 TIME0flag_5ms   ;
 extern u8 TIME0flag_10ms  ;
 extern u8 TIME0flag_15ms  ;
@@ -52,13 +47,13 @@ void main()
       //初始化PIT0，定时时间为： 5ms
      I2C_init (I2C0) ;   //I2C初始化
      acci2c_set();       //I2C加速度设置 
+      motor_init();
      
-     
-        FTM_PWM_init(FTM0, CH4, 35000, 0);//right go PTD4
-        FTM_PWM_init(FTM0, CH5, 35000, 0);//left  go  PTD5
-        FTM_PWM_init(FTM0, CH6, 35000, 50);//right back  PTD6
-        FTM_PWM_init(FTM0, CH7, 35000, 50);//left back   PTD7
-     
+   // FTM_PWM_init(FTM0, CH4, 35000, 0);//left go PTD4
+   // FTM_PWM_init(FTM0, CH5, 35000, 0);//right go  PTD5
+   // FTM_PWM_init(FTM0, CH6, 35000, 50);//left back  PTD6
+   // FTM_PWM_init(FTM0, CH7, 35000, 50);//right back   PTD7
+ 
      
      EnableInterrupts;			                    //开总中断  
     
@@ -70,7 +65,9 @@ void main()
      
          power_get();
          LCDTIME();
-      
+         key_use();
+         key_speed();
+         carrun();
      //  AngularAD_get();
       /*********************
       5ms程序执行代码段

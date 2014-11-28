@@ -4,23 +4,23 @@
 #include"common.h"
 
 /**********电机配置**********/
-/***从车后方往前看*****/
+/***朝车底盘往前看*****/
 
 /***右电机前进FTM模块配置***/
 #define RIGHT_G_FTM  FTM0
-#define RIGHT_G_CH   CH4  //PTD4
+#define RIGHT_G_CH   CH5  //PTD5
 
 /***右电机后退FTM模块配置***/
 #define RIGHT_B_FTM  FTM0
-#define RIGHT_B_CH   CH6  //PTD6
+#define RIGHT_B_CH   CH7  //PTD7
 
 /***左电机前进FTM模块配置***/
 #define LEFT_G_FTM  FTM0
-#define LEFT_G_CH   CH5   //PTD5
+#define LEFT_G_CH   CH4   //PTD4
 
 /***左电机后退FTM模块配置***/
 #define LEFT_B_FTM  FTM0
-#define LEFT_B_CH   CH7   //PTD7
+#define LEFT_B_CH   CH6   //PTD6
 
 /***电机驱动频率***/
 #define MOTOR_FREQ 10000
@@ -50,7 +50,7 @@ typedef struct motor_status
 
 }motor_status;
 
-
+void key_speed(void);
 void balance_duty(void);
 void carrun(void);
 #endif

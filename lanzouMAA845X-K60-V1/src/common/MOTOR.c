@@ -1,9 +1,8 @@
-#include"common.h"
-#include"MOTOR.h"
-#include"include.h"
+#include "common.h"
+#include "MOTOR.h"
+#include "include.h"
 motor_status motor;
 car_status car;
-extern u8 value;
 
 float balance_p = 1.0;
 /***电机初始化***/
@@ -23,11 +22,18 @@ void balance_duty(void)
      motor.right_duty = motor.right_duty + motor.balance_duty;
     
 }
-
+/*********小车行驶占空比************/
 void carrun(void)
 {
-    FTM_PWM_Duty(RIGHT_G_FTM,RIGHT_G_CH,motor.right_duty);//right go PTD4
-    FTM_PWM_Duty(RIGHT_B_FTM,RIGHT_B_CH,motor.right_duty);//right back  PTD6
-    FTM_PWM_Duty(LEFT_G_FTM,LEFT_G_CH,motor.left_duty);//left  go  PTD5
-    FTM_PWM_Duty(LEFT_B_FTM,LEFT_B_CH,motor.left_duty);
+   
+    FTM_PWM_Duty(RIGHT_G_FTM,RIGHT_G_CH,motor.right_duty);//right go PTD5
+    FTM_PWM_Duty(RIGHT_B_FTM,RIGHT_B_CH,0);//right back  PTD7
+    FTM_PWM_Duty(LEFT_G_FTM,LEFT_G_CH,motor.left_duty);//left  go  PTD4
+    FTM_PWM_Duty(LEFT_B_FTM,LEFT_B_CH,0);
+}
+/*****按键控制小车速度********/
+void key_speed(void)
+{
+    motor.left_duty = key_use()*10;
+    motor.right_duty = key_use()*10;
 }
