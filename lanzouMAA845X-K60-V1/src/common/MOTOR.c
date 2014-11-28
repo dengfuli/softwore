@@ -6,7 +6,7 @@ car_status car;
 
 float balance_p = 1.0;
 /***电机初始化***/
-void motor_init()
+void motor_init(void)
 {
     FTM_PWM_init(RIGHT_G_FTM,RIGHT_G_CH,MOTOR_FREQ,INIT_DUTY);//right go PTD4
     FTM_PWM_init(RIGHT_B_FTM,RIGHT_B_CH,MOTOR_FREQ,INIT_DUTY);//right back  PTD6
@@ -32,8 +32,31 @@ void carrun(void)
     FTM_PWM_Duty(LEFT_B_FTM,LEFT_B_CH,0);
 }
 /*****按键控制小车速度********/
+int DANG = 0;
 void key_speed(void)
 {
-    motor.left_duty = key_use()*10;
-    motor.right_duty = key_use()*10;
+  
+     if(!K1_IN)
+   {
+       
+       while(!K1_IN);
+      
+       if(DANG < 10)
+       {
+            DANG++;
+       }
+   }
+   if(!K2_IN)
+   {
+       while(!K2_IN);
+       if(DANG > 0)
+       {
+            DANG--;
+       }
+   }
+   LCD_set_XY(0,2);
+   u8 tem = (u8)(DANG+48);
+   LCD_write_char(tem);    
+    motor.left_duty = DANG*10;
+    motor.right_duty = DANG*10;
 }

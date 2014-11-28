@@ -65,7 +65,6 @@ void main()
      
          power_get();
          LCDTIME();
-         key_use();
          key_speed();
          carrun();
      //  AngularAD_get();

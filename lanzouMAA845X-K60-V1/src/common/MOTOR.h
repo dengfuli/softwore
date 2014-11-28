@@ -50,6 +50,7 @@ typedef struct motor_status
 
 }motor_status;
 
+void motor_init(void);
 void key_speed(void);
 void balance_duty(void);
 void carrun(void);
