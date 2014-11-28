@@ -32,7 +32,8 @@
 #include  "dma.h"       //DMAÄ£¿é
 #include  "nokia.h"
 #include  "calculation.h"
-#include  "power_display.h"
+#include  "power.h"
+#include  "display.h"
 //#include  "isr.h"      //isr
 
 

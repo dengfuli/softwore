@@ -2008,6 +2008,9 @@
       <name>$PROJ_DIR$\..\..\src\common\assert.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\..\src\common\display.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\..\src\common\io.c</name>
     </file>
     <file>
@@ -2017,7 +2020,7 @@
       <name>$PROJ_DIR$\..\..\src\common\MOTOR.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\src\common\power_display.c</name>
+      <name>$PROJ_DIR$\..\..\src\common\power.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\src\common\printf.c</name>

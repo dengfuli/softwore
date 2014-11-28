@@ -5,9 +5,6 @@
 #include "MOTOR.h"
 
 
-extern u8 y;
-extern u8 z;
-extern u8 XYZ_CFG_Data;
 /*********************************************************** 
 函数名称：LCD_KEY_init
 函数功能：
@@ -34,23 +31,14 @@ void LCD_KEY_init (void)
 
 void LCDTIME(void)
 {
-               u8 a,b,c;
-              
-              
-              a=(u8)((power_get()/100)+48);
-              b=(u8)(((power_get()%100)/10)+48);
-              c=(u8)((power_get()%10)+48);
-              
-              
-          
-              
-              LCD_set_XY(0,0);
-              
-              LCD_write_char(a);
-              LCD_write_char('.');
-              LCD_write_char(b);
-              LCD_write_char(c);
-              LCD_write_char('V');
+      /*  
+        LCD_write_chinese_string(0,0,12,7,0,0);//电
+	LCD_write_chinese_string(12,0,12,7,1,0);//源
+	LCD_write_chinese_string(24,0,12,7,2,0);//电
+        LCD_write_chinese_string(36,0,12,7,3,0);//压
+       */
+        power_display();
+        angle_display();
 }
 
 /*********************************************************** 
@@ -82,6 +70,10 @@ void AngularAD_get(void)
 
 
 /*********加速度AD值获取**********/
+
+
+u8 XYZ_CFG_Data ;
+u8 y,z,value;
 #define   SAVEADRESS   (0X1C)
 void acc_ad_get(void)
 {
@@ -104,9 +96,10 @@ void acc_ad_get(void)
       }
 }
 
-float angle_get(void)
+int angle_get(void)
 {
     u8 y_g = y - ACC_YOUT_0;//(y - ACC_YOUT_0) * 0.153125   :(g/64)
     u8 z_g = z - ACC_ZOUT_0;//(z - ACC_ZOUT_0) * 0.153125
-    return(57.296*atan2(y_g,z_g));
+    int angle100 = (int)((57.296*atan2(y_g,z_g))*10);
+    return (angle100);//返回角度的10倍
 }

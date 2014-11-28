@@ -36,8 +36,7 @@ extern u8 ar1_ad;
 extern u8 ar2_ad;
 
 
-u8 XYZ_CFG_Data ;
-u8 y,z,value;
+
 
 void main()
 {

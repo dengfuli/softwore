@@ -9,7 +9,7 @@
 
 #define ADCOUT  10   //角速度取10次AD值，并求平均值
 
-float angle_get(void);
+int angle_get(void);
 void acc_ad_get(void);
 void LCD_KEY_init (void);
 void AngularAD_get(void);
