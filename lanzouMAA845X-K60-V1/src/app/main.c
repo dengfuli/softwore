@@ -29,6 +29,8 @@ extern u8 TIME0flag_20ms  ;
 extern u8 TIME1flag_1s ;
 extern u8 ar1_ad;
 extern u8 ar2_ad;
+s16 CAR_ANGLE_SET = 1754 ;
+s16 CAR_GYRO_SET =  1960 ;
 
 
 
@@ -46,7 +48,7 @@ void main()
       pit_init_ms(PIT1, 100);
       //初始化PIT0，定时时间为： 5ms
 
-    //   motor_init();
+      motor_init();
      
    // FTM_PWM_init(FTM0, CH4, 35000, 0);//left go PTD4
    // FTM_PWM_init(FTM0, CH5, 35000, 0);//right go  PTD5
@@ -61,17 +63,23 @@ void main()
     ******************************************/
     while(1)
     {
-         power_get();
-         LCDTIME();
+       
+        angular_get();
+        LCDTIME();
+        balance_duty();
+        motor_set();
+           
+       //  Kalman_filter();
+         
+         
        //  key_speed();
         // carrun();
-     //  AngularAD_get();
       /*********************
       5ms程序执行代码段
       *********************/
       if(TIME0flag_5ms == 1)
       { 
-        TIME0flag_5ms = 0 ;
+      TIME0flag_5ms = 0 ;
       //  carrun();
       }
       

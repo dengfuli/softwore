@@ -1,7 +1,7 @@
 #ifndef _MOTOR_H
 #define _MOTOR_H_
 
-#include"common.h"
+#include  "common.h"
 
 /**********电机配置**********/
 /***朝车底盘往前看*****/
@@ -37,11 +37,16 @@ typedef struct car_status
     float angle_set;
     float angular_set;
     float speed_set;
-    float angle; 
+    float angle;
     float angular;
+    float speed_old;
+    float speed_new;
+    float direct_offset_old;
+    float direct_offset_new;
+    float direct_duty;
+    float direct_duty_output;
 }car_status;
-
-
+extern car_status car;
 typedef struct motor_status
 {
     int8 balance_duty;
@@ -54,4 +59,6 @@ void motor_init(void);
 void key_speed(void);
 void balance_duty(void);
 void carrun(void);
+void motor_set(void);
+void balance_run(int16 duty);
 #endif
