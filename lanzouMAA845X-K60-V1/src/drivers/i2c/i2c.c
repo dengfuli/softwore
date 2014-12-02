@@ -230,32 +230,3 @@ void I2C_WriteAddr(I2Cn i2cn, u8 SlaveID, u8 Addr, u8 Data)
 }
 
 
-/******加速度i2c配置程序*******/
-#define   SAVEADRESS   (0X1C)
-extern u8 XYZ_CFG_Data;
-void acci2c_set(void)
-{
-    
-    u8 CTRL_REG1_Data ;
-    CTRL_REG1_Data = I2C_ReadAddr(I2C0, SAVEADRESS, 0x2A)  ;
-    CTRL_REG1_Data &= 0xFE; //Clear Active Bit
-    I2C_WriteAddr(I2C0, SAVEADRESS, 0x2A, CTRL_REG1_Data); 
-   
-    XYZ_CFG_Data = I2C_ReadAddr(I2C0, SAVEADRESS,0x0E);
-    XYZ_CFG_Data &= 0xFC; //Clear the FS bits to 00 2g
-    I2C_WriteAddr(I2C0, SAVEADRESS,0x0E, XYZ_CFG_Data);
-    
-    CTRL_REG1_Data = I2C_ReadAddr(I2C0, SAVEADRESS, 0x2A);
-    CTRL_REG1_Data &= 0x5E; //clear the bits that should be cleared for the sample rates
-    CTRL_REG1_Data |= 0x18; // DR = 100 Hz
-    I2C_WriteAddr(I2C0, SAVEADRESS, 0x2A, CTRL_REG1_Data);
-  
-    CTRL_REG1_Data = I2C_ReadAddr(I2C0, SAVEADRESS, 0x2A);
-    CTRL_REG1_Data &= 0xFC; //Normal mode 
-    I2C_WriteAddr(I2C0, 0X38, SAVEADRESS, CTRL_REG1_Data);   
-    
-    
-    CTRL_REG1_Data = I2C_ReadAddr(I2C0, SAVEADRESS, 0x2A);
-    CTRL_REG1_Data |= 0x01; //Normal mode 
-    I2C_WriteAddr(I2C0, SAVEADRESS, 0x2A, CTRL_REG1_Data); 
-}

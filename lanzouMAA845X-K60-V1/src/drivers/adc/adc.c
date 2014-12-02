@@ -183,7 +183,7 @@ u16 ad_mid(ADCn adcn, ADC_Ch ch, ADC_nbit bit)
 *  修改时间：2012-2-10
 *  备    注：修改苏州大学的例程
 *************************************************************************/
-u16 ad_ave10(ADCn adcn, ADC_Ch ch, ADC_nbit bit, u8 N) //采样集合
+u16 ad_aveN(ADCn adcn, ADC_Ch ch, ADC_nbit bit, u8 N) //采样集合
 {
     u32 tmp = 0;
     u8  i;

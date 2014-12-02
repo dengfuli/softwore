@@ -28,7 +28,7 @@ typedef enum MSmode
 void  I2C_init(I2Cn);                                         //初始化I2C
 void  I2C_WriteAddr(I2Cn, u8 SlaveID, u8 Addr, u8 Data);      //读取地址里的内容
 u8    I2C_ReadAddr(I2Cn, u8 SlaveID, u8 Addr);                //往地址里写入内容
-void acci2c_set();
+
 
 
 

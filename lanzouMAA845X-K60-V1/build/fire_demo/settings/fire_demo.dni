@@ -10,7 +10,7 @@ LimitSize=0
 ByteLimit=50
 [DebugChecksum]
 <<<<<<< HEAD
-Checksum=874506193
+Checksum=-2078522155
 =======
 Checksum=-1818162040
 >>>>>>> 672d24dbdcd8de189109b16be8a175d4bbaef794
@@ -43,6 +43,12 @@ ITMportsEnable=0
 ITMportsTermIO=0
 ITMportsLogFile=0
 ITMlogFile=$PROJ_DIR$\ITM.log
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
 [SWOTraceWindow]
 PcSampling=0
 InterruptLogs=0
@@ -81,6 +87,11 @@ GraphEnabled=0
 ShowTimeLog=1
 ShowTimeSum=1
 SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\landzoV3.0}.13.26" 0 0 1 "" 0 "" 0
+Count=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -88,6 +99,12 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\Thinkpd\Desktop\softwore\lanzouMAA845X-K60-V1\src\common\printf.c" ""
+A1=_ "C:\Users\wangjiayu\Desktop\landzoMAA845X-K60-V1\src\common\printf.c" ""
+A2=_ "E:\study\fire_Kinetis_´úÂëV2.2\src\cpu\crt0.s" ""
+Count=3
+SuppressDialog=1
 [CallStackLog]
 Enabled=0
 [PowerProbe]
@@ -100,14 +117,3 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\landzoV3.0}.13.26" 0 0 1 "" 0 "" 0
-Count=1
-[Aliases]
-A0=_ "C:\Users\Thinkpd\Desktop\softwore\lanzouMAA845X-K60-V1\src\common\printf.c" ""
-A1=_ "C:\Users\wangjiayu\Desktop\landzoMAA845X-K60-V1\src\common\printf.c" ""
-A2=_ "E:\study\fire_Kinetis_´úÂëV2.2\src\cpu\crt0.s" ""
-Count=3
-SuppressDialog=1

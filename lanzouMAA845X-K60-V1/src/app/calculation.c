@@ -18,11 +18,11 @@
 ***********************************************************/
 void AngleAcceleration_init(void)
 {
-     adc_init(ADC0, AD8) ;     //PTB0
-     adc_init(ADC0, AD9) ;     //PTB1
-   //  adc_init(ADC0, AD12) ;     //PTB2
-    // adc_init(ADC0, AD13) ;     //PTB3
-     //adc_init(ADC0, AD14) ;     //PTC0
+     //adc_init(ADC0, AD8) ;     //PTB0
+   //  adc_init(ADC0, AD9) ;     //PTB1
+     adc_init(ADC0, AD12) ;     //PTB2
+   //  adc_init(ADC0, AD13) ;     //PTB3
+     adc_init(ADC0, AD14) ;     //PTC0
      //adc_init(ADC0, AD15) ;     //PTC1  
 }
 
@@ -37,37 +37,16 @@ void AngularAD_get(void)
 }
 
 
-/*********加速度AD值获取**********/
+/*********加速度所测角度值获取**********/
 
 
-u8 XYZ_CFG_Data ;
-u8 y,z,value;
-#define   SAVEADRESS   (0X1C)
-void acc_ad_get(void)
+float angle_get(void)
 {
-     
-      XYZ_CFG_Data = I2C_ReadAddr(I2C0, SAVEADRESS,0x00);
-       if(XYZ_CFG_Data&0x80)
-      {
-        XYZ_CFG_Data = I2C_ReadAddr(I2C0, SAVEADRESS,0x03);
-        y = XYZ_CFG_Data;
-
-        XYZ_CFG_Data = I2C_ReadAddr(I2C0, SAVEADRESS,0x05);
-        z = XYZ_CFG_Data;
-       
-        y = y - 96;
-        z = z + 96;
-      // float angle100 = angle_get()*100;
-     //  int angle =(int)(angle100);
-      //  printf("y= %d z= %d angle= %d\n\n",y,z,angle);
-       
-      }
-}
-
-int angle_get(void)
-{
-    u8 y_g = y - ACC_YOUT_0;//(y - ACC_YOUT_0) * 0.153125   :(g/64)
-    u8 z_g = z - ACC_ZOUT_0;//(z - ACC_ZOUT_0) * 0.153125
-    int angle100 = (int)((57.296*atan2(y_g,z_g))*10);
-    return (angle100);//返回角度的10倍
+    u16 z_g =ad_aveN(ADC0, AD14, ADC_16bit, 10) - ACC_ZOUT_0  ;
+    u16 x_g = ad_aveN(ADC0, AD12, ADC_16bit, 10) - ACC_XOUT_0;
+    float ang = 57.296*atan2(x_g,z_g);
+  //  printf("%d %d\n\n",x_g,z_g);
+   // printf("%d\n\n",(int)(ang));
+    return (57.296*atan2(x_g,z_g));
+   
 }
