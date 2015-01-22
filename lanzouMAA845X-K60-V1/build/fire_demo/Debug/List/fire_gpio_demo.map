@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.10.1.6676/W32 for ARM                 02/Dec/2014  22:07:35
+# IAR ELF Linker V7.10.1.6676/W32 for ARM                 22/Jan/2015  17:36:33
 # Copyright 2007-2014 IAR Systems AB.
 #
 #    Output file  =  
@@ -120,7 +120,7 @@ __SystemLibrary = DLib
   .noinit              ro code  0x00000410    0x3c  crt0.o [1]
                               - 0x0000044c    0x3c
 
-"P1", part 2 of 2:                          0x4050
+"P1", part 2 of 2:                          0x37e8
   .text                ro code  0x0000044c   0x6e0  printf.o [1]
   .text                ro code  0x00000b2c    0x20  DblCmpEq.o [4]
   .text                ro code  0x00000b4c    0xb8  modf.o [4]
@@ -136,163 +136,171 @@ __SystemLibrary = DLib
   .text                ro code  0x00001608    0x38  wdog.o [1]
   .text                ro code  0x00001640    0xc0  startup.o [1]
   .text                ro code  0x00001700    0x5c  sysinit.o [1]
-  .text                ro code  0x0000175c    0xd0  main.o [1]
-  .text                ro code  0x0000182c   0x128  arm_cm4.o [1]
-  Veneer               ro code  0x00001954     0x8  - Linker created -
-  .text                ro code  0x0000195c   0x2f4  mcg.o [1]
-  .text                ro code  0x00001c50   0x244  uart.o [1]
-  .text                ro code  0x00001e94   0x1bc  display.o [1]
-  .text                ro code  0x00002050    0xe0  calculation.o [1]
-  .text                ro code  0x00002130    0xc4  gpio.o [1]
-  .text                ro code  0x000021f4    0x70  PIT.o [1]
-  .text                ro code  0x00002264   0x160  MOTOR.o [1]
-  .text                ro code  0x000023c4   0x1e8  nokia.o [1]
-  .text                ro code  0x000025ac    0x74  power.o [1]
-  .text                ro code  0x00002620    0xd8  FltMul.o [4]
-  .text                ro code  0x000026f8    0x44  FltToS32.o [4]
-  .text                ro code  0x0000273c   0x36a  adc.o [1]
-  .text                ro code  0x00002aa8   0x246  DblDiv.o [4]
-  .text                ro code  0x00002cf0    0x90  DblToFlt.o [4]
-  .text                ro code  0x00002d80    0xcc  atan2.o [4]
-  .text                ro code  0x00002e4c    0x18  assert.o [1]
-  .text                ro code  0x00002e64   0x3d4  FTM.o [1]
-  .text                ro code  0x00003238    0x24  FltCmpLe.o [4]
-  .text                ro code  0x0000325c    0xe6  FltSub.o [4]
-  .text                ro code  0x00003344    0x84  FltAdd.o [4]
-  .text                ro code  0x000033c8    0x32  xdtest.o [4]
-  .text                ro code  0x00003400   0x1e0  xatan.o [4]
-  .text                ro code  0x000035e0    0x2e  DblCmpGe.o [4]
-  .text                ro code  0x00003610   0x484  isr.o [1]
-  .rodata              const    0x00003a94   0x1dc  nokia.o [1]
-  .data_init                    0x00003c70    0x60  <Block>
-    Initializer bytes  ro data  0x00003c70    0x60  <for .data-1>
-  .rodata              const    0x00003cd0    0x50  adc.o [1]
-  .rodata              const    0x00003d20    0x50  FTM.o [1]
-  .rodata              const    0x00003d70    0x50  gpio.o [1]
-  CodeRelocate                  0x00003dc0    0x50  <Block>
-    Initializer bytes  ro data  0x00003dc0    0x50  <for CodeRelocateRam-1>
-  .rodata              const    0x00003e10    0x48  assert.o [1]
-  .rodata              const    0x00003e58    0x48  start.o [1]
-  .rodata              const    0x00003ea0    0x40  start.o [1]
-  .rodata              const    0x00003ee0    0x3c  arm_cm4.o [1]
-  .rodata              const    0x00003f1c    0x38  arm_cm4.o [1]
-  .rodata              const    0x00003f54    0x30  vectors.o [1]
-  .rodata              const    0x00003f84    0x2c  start.o [1]
-  .rodata              const    0x00003fb0    0x28  start.o [1]
-  .rodata              const    0x00003fd8    0x28  start.o [1]
-  .text                ro code  0x00004000    0x28  data_init.o [5]
-  .iar.init_table      const    0x00004028    0x10  - Linker created -
-  .rodata              const    0x00004038    0x20  isr.o [1]
-  .rodata              const    0x00004058    0x20  start.o [1]
-  .rodata              const    0x00004078    0x20  start.o [1]
-  .rodata              const    0x00004098    0x20  start.o [1]
-  .rodata              const    0x000040b8    0x20  start.o [1]
-  .rodata              const    0x000040d8    0x20  start.o [1]
-  .rodata              const    0x000040f8    0x1c  start.o [1]
-  .rodata              const    0x00004114    0x1c  start.o [1]
-  .rodata              const    0x00004130    0x1c  start.o [1]
-  .text                ro code  0x0000414c    0x1a  cmain.o [5]
-  .text                ro code  0x00004166     0x4  low_level_init.o [3]
-  .text                ro code  0x0000416a     0x4  exit.o [3]
-  .text                ro code  0x00004170     0xa  cexit.o [5]
-  .text                ro code  0x0000417c    0x14  exit.o [6]
-  .rodata              const    0x00004190    0x18  start.o [1]
-  .rodata              const    0x000041a8    0x18  start.o [1]
-  .rodata              const    0x000041c0    0x18  start.o [1]
-  .rodata              const    0x000041d8    0x18  start.o [1]
-  .rodata              const    0x000041f0    0x18  start.o [1]
-  .rodata              const    0x00004208    0x18  start.o [1]
-  .rodata              const    0x00004220    0x18  start.o [1]
-  .rodata              const    0x00004238    0x18  start.o [1]
-  .text                ro code  0x00004250    0x18  vectors.o [1]
-  .rodata              const    0x00004268    0x14  isr.o [1]
-  .rodata              const    0x0000427c    0x14  isr.o [1]
-  .rodata              const    0x00004290    0x14  start.o [1]
-  .rodata              const    0x000042a4    0x14  start.o [1]
-  .rodata              const    0x000042b8    0x14  start.o [1]
-  .rodata              const    0x000042cc    0x14  start.o [1]
-  .rodata              const    0x000042e0    0x14  start.o [1]
-  .rodata              const    0x000042f4    0x14  start.o [1]
-  .rodata              const    0x00004308    0x14  start.o [1]
-  .rodata              const    0x0000431c    0x14  start.o [1]
-  .rodata              const    0x00004330    0x10  isr.o [1]
-  .rodata              const    0x00004340    0x10  start.o [1]
-  .rodata              const    0x00004350    0x10  start.o [1]
-  .rodata              const    0x00004360    0x10  start.o [1]
-  .rodata              const    0x00004370    0x10  start.o [1]
-  .rodata              const    0x00004380    0x10  start.o [1]
-  .rodata              const    0x00004390    0x10  start.o [1]
-  .rodata              const    0x000043a0    0x10  start.o [1]
-  .rodata              const    0x000043b0    0x10  start.o [1]
-  .rodata              const    0x000043c0    0x10  start.o [1]
-  .rodata              const    0x000043d0    0x10  start.o [1]
-  .rodata              const    0x000043e0    0x10  start.o [1]
-  .rodata              const    0x000043f0    0x10  start.o [1]
-  .rodata              const    0x00004400    0x10  start.o [1]
-  .text                ro code  0x00004410    0x10  io.o [1]
-  .rodata              const    0x00004420     0xc  start.o [1]
-  .rodata              const    0x0000442c     0xc  start.o [1]
-  .rodata              const    0x00004438     0xc  start.o [1]
-  .rodata              const    0x00004444     0xc  start.o [1]
-  .text                ro code  0x00004450     0xc  cstartup_M.o [5]
-  .rodata              const    0x0000445c     0x8  start.o [1]
-  .rodata              const    0x00004464     0x8  start.o [1]
-  .rodata              const    0x0000446c     0x8  start.o [1]
-  .rodata              const    0x00004474     0x8  start.o [1]
-  .rodata              const    0x0000447c     0x8  start.o [1]
-  .rodata              const    0x00004484     0x8  start.o [1]
-  .rodata              const    0x0000448c     0x8  start.o [1]
-  .rodata              const    0x00004494     0x8  start.o [1]
-                              - 0x0000449c  0x4050
+  .text                ro code  0x0000175c    0xbc  main.o [1]
+  .text                ro code  0x00001818   0x128  arm_cm4.o [1]
+  Veneer               ro code  0x00001940     0x8  - Linker created -
+  .text                ro code  0x00001948   0x2f4  mcg.o [1]
+  .text                ro code  0x00001c3c   0x244  uart.o [1]
+  .text                ro code  0x00001e80   0x2e0  calculation.o [1]
+  .text                ro code  0x00002160    0xc4  gpio.o [1]
+  .text                ro code  0x00002224    0x70  PIT.o [1]
+  .text                ro code  0x00002294   0x36a  adc.o [1]
+  .text                ro code  0x00002600   0x246  DblDiv.o [4]
+  .text                ro code  0x00002848    0x90  DblToFlt.o [4]
+  .text                ro code  0x000028d8    0xcc  atan2.o [4]
+  .text                ro code  0x000029a4    0xd8  FltMul.o [4]
+  .text                ro code  0x00002a7c    0x84  FltAdd.o [4]
+  .text                ro code  0x00002b00    0xfc  FltDiv.o [4]
+  .text                ro code  0x00002bfc    0xe6  FltSub.o [4]
+  .text                ro code  0x00002ce4    0x4e  FltToDbl.o [4]
+  .text                ro code  0x00002d34    0x18  assert.o [1]
+  .text                ro code  0x00002d4c    0x32  xdtest.o [4]
+  .rodata              const    0x00002d80    0x3c  arm_cm4.o [1]
+  .text                ro code  0x00002dc0   0x1e0  xatan.o [4]
+  .text                ro code  0x00002fa0    0x2e  DblCmpGe.o [4]
+  .text                ro code  0x00002fd0   0x484  isr.o [1]
+  .data_init                    0x00003454    0x78  <Block>
+    Initializer bytes  ro data  0x00003454    0x78  <for .data-1>
+  .rodata              const    0x000034cc    0x50  adc.o [1]
+  .rodata              const    0x0000351c    0x50  gpio.o [1]
+  CodeRelocate                  0x0000356c    0x50  <Block>
+    Initializer bytes  ro data  0x0000356c    0x50  <for CodeRelocateRam-1>
+  .rodata              const    0x000035bc    0x48  assert.o [1]
+  .rodata              const    0x00003604    0x48  start.o [1]
+  .rodata              const    0x0000364c    0x40  start.o [1]
+  .rodata              const    0x0000368c    0x38  arm_cm4.o [1]
+  .rodata              const    0x000036c4    0x30  vectors.o [1]
+  .rodata              const    0x000036f4    0x2c  start.o [1]
+  .rodata              const    0x00003720    0x28  calculation.o [1]
+  .rodata              const    0x00003748    0x28  start.o [1]
+  .rodata              const    0x00003770    0x28  start.o [1]
+  .text                ro code  0x00003798    0x28  data_init.o [5]
+  .iar.init_table      const    0x000037c0    0x10  - Linker created -
+  .rodata              const    0x000037d0    0x20  isr.o [1]
+  .rodata              const    0x000037f0    0x20  start.o [1]
+  .rodata              const    0x00003810    0x20  start.o [1]
+  .rodata              const    0x00003830    0x20  start.o [1]
+  .rodata              const    0x00003850    0x20  start.o [1]
+  .rodata              const    0x00003870    0x20  start.o [1]
+  .rodata              const    0x00003890    0x1c  start.o [1]
+  .rodata              const    0x000038ac    0x1c  start.o [1]
+  .rodata              const    0x000038c8    0x1c  start.o [1]
+  .text                ro code  0x000038e4    0x1a  cmain.o [5]
+  .text                ro code  0x000038fe     0x4  low_level_init.o [3]
+  .text                ro code  0x00003902     0x4  exit.o [3]
+  .text                ro code  0x00003908     0xa  cexit.o [5]
+  .text                ro code  0x00003914    0x14  exit.o [6]
+  .rodata              const    0x00003928    0x18  start.o [1]
+  .rodata              const    0x00003940    0x18  start.o [1]
+  .rodata              const    0x00003958    0x18  start.o [1]
+  .rodata              const    0x00003970    0x18  start.o [1]
+  .rodata              const    0x00003988    0x18  start.o [1]
+  .rodata              const    0x000039a0    0x18  start.o [1]
+  .rodata              const    0x000039b8    0x18  start.o [1]
+  .rodata              const    0x000039d0    0x18  start.o [1]
+  .text                ro code  0x000039e8    0x18  vectors.o [1]
+  .rodata              const    0x00003a00    0x14  isr.o [1]
+  .rodata              const    0x00003a14    0x14  isr.o [1]
+  .rodata              const    0x00003a28    0x14  start.o [1]
+  .rodata              const    0x00003a3c    0x14  start.o [1]
+  .rodata              const    0x00003a50    0x14  start.o [1]
+  .rodata              const    0x00003a64    0x14  start.o [1]
+  .rodata              const    0x00003a78    0x14  start.o [1]
+  .rodata              const    0x00003a8c    0x14  start.o [1]
+  .rodata              const    0x00003aa0    0x14  start.o [1]
+  .rodata              const    0x00003ab4    0x14  start.o [1]
+  .rodata              const    0x00003ac8    0x10  isr.o [1]
+  .rodata              const    0x00003ad8    0x10  start.o [1]
+  .rodata              const    0x00003ae8    0x10  start.o [1]
+  .rodata              const    0x00003af8    0x10  start.o [1]
+  .rodata              const    0x00003b08    0x10  start.o [1]
+  .rodata              const    0x00003b18    0x10  start.o [1]
+  .rodata              const    0x00003b28    0x10  start.o [1]
+  .rodata              const    0x00003b38    0x10  start.o [1]
+  .rodata              const    0x00003b48    0x10  start.o [1]
+  .rodata              const    0x00003b58    0x10  start.o [1]
+  .rodata              const    0x00003b68    0x10  start.o [1]
+  .rodata              const    0x00003b78    0x10  start.o [1]
+  .rodata              const    0x00003b88    0x10  start.o [1]
+  .rodata              const    0x00003b98    0x10  start.o [1]
+  .text                ro code  0x00003ba8    0x10  io.o [1]
+  .rodata              const    0x00003bb8     0xc  start.o [1]
+  .rodata              const    0x00003bc4     0xc  start.o [1]
+  .rodata              const    0x00003bd0     0xc  start.o [1]
+  .rodata              const    0x00003bdc     0xc  start.o [1]
+  .text                ro code  0x00003be8     0xc  cstartup_M.o [5]
+  .rodata              const    0x00003bf4     0x8  start.o [1]
+  .rodata              const    0x00003bfc     0x8  start.o [1]
+  .rodata              const    0x00003c04     0x8  start.o [1]
+  .rodata              const    0x00003c0c     0x8  start.o [1]
+  .rodata              const    0x00003c14     0x8  start.o [1]
+  .rodata              const    0x00003c1c     0x8  start.o [1]
+  .rodata              const    0x00003c24     0x8  start.o [1]
+  .rodata              const    0x00003c2c     0x8  start.o [1]
+                              - 0x00003c34  0x37e8
 
-"P2", part 1 of 2:                            0xb0
-  .data                         0x1fff0410    0x60  <Block>
-    .data-1                     0x1fff0410    0x60  <Init block>
+"P2", part 1 of 2:                            0xc8
+  .data                         0x1fff0410    0x78  <Block>
+    .data-1                     0x1fff0410    0x78  <Init block>
       .data            inited   0x1fff0410     0x8  adc.o [1]
-      .data            inited   0x1fff0418     0xc  FTM.o [1]
-      .data            inited   0x1fff0424    0x14  gpio.o [1]
-      .data            inited   0x1fff0438    0x14  gpio.o [1]
-      .data            inited   0x1fff044c     0x8  mcg.o [1]
-      .data            inited   0x1fff0454     0x4  MOTOR.o [1]
-      .data            inited   0x1fff0458    0x18  uart.o [1]
-  CodeRelocateRam               0x1fff0470    0x50  <Block>
-    CodeRelocateRam-1           0x1fff0470    0x50  <Init block>
-      .textrw          inited   0x1fff0470    0x50  mcg.o [1]
-                              - 0x1fff04c0    0xb0
+      .data            inited   0x1fff0418     0x4  calculation.o [1]
+      .data            inited   0x1fff041c     0x4  calculation.o [1]
+      .data            inited   0x1fff0420     0x4  calculation.o [1]
+      .data            inited   0x1fff0424     0x4  calculation.o [1]
+      .data            inited   0x1fff0428     0x4  calculation.o [1]
+      .data            inited   0x1fff042c     0x4  calculation.o [1]
+      .data            inited   0x1fff0430     0x4  calculation.o [1]
+      .data            inited   0x1fff0434     0x4  calculation.o [1]
+      .data            inited   0x1fff0438     0x4  calculation.o [1]
+      .data            inited   0x1fff043c     0x4  calculation.o [1]
+      .data            inited   0x1fff0440    0x14  gpio.o [1]
+      .data            inited   0x1fff0454    0x14  gpio.o [1]
+      .data            inited   0x1fff0468     0x8  mcg.o [1]
+      .data            inited   0x1fff0470    0x18  uart.o [1]
+  CodeRelocateRam               0x1fff0488    0x50  <Block>
+    CodeRelocateRam-1           0x1fff0488    0x50  <Init block>
+      .textrw          inited   0x1fff0488    0x50  mcg.o [1]
+                              - 0x1fff04d8    0xc8
 
-"P2", part 2 of 2:                            0x72
-  .bss                          0x1fff04c0    0x72  <Block>
-    .bss               zero     0x1fff04c0    0x10  adc.o [1]
-    .bss               zero     0x1fff04d0     0x4  MOTOR.o [1]
-    .bss               zero     0x1fff04d4    0x2c  MOTOR.o [1]
-    .bss               zero     0x1fff0500     0x4  MOTOR.o [1]
-    .bss               zero     0x1fff0504     0x4  power.o [1]
-    .bss               zero     0x1fff0508     0x4  power.o [1]
-    .bss               zero     0x1fff050c     0x4  sysinit.o [1]
-    .bss               zero     0x1fff0510     0x4  sysinit.o [1]
-    .bss               zero     0x1fff0514     0x4  sysinit.o [1]
-    .bss               zero     0x1fff0518     0x2  isr.o [1]
-    .bss               zero     0x1fff051a     0x2  isr.o [1]
-    .bss               zero     0x1fff051c     0x2  isr.o [1]
-    .bss               zero     0x1fff051e     0x2  isr.o [1]
-    .bss               zero     0x1fff0520     0x2  isr.o [1]
-    .bss               zero     0x1fff0522     0x1  isr.o [1]
-    .bss               zero     0x1fff0523     0x1  isr.o [1]
-    .bss               zero     0x1fff0524     0x1  isr.o [1]
-    .bss               zero     0x1fff0525     0x1  isr.o [1]
-    .bss               zero     0x1fff0526     0x1  isr.o [1]
-    .bss               zero     0x1fff0527     0x1  isr.o [1]
-    .bss               zero     0x1fff0528     0x1  isr.o [1]
-    .bss               zero     0x1fff0529     0x1  isr.o [1]
-    .bss               zero     0x1fff052a     0x1  isr.o [1]
-    .bss               zero     0x1fff052b     0x1  isr.o [1]
-    .bss               zero     0x1fff052c     0x1  isr.o [1]
-    .bss               zero     0x1fff052d     0x1  isr.o [1]
-    .bss               zero     0x1fff052e     0x1  isr.o [1]
-    .bss               zero     0x1fff052f     0x1  isr.o [1]
-    .bss               zero     0x1fff0530     0x1  isr.o [1]
-    .bss               zero     0x1fff0531     0x1  isr.o [1]
-                              - 0x1fff0532    0x72
+"P2", part 2 of 2:                            0x8a
+  .bss                          0x1fff04d8    0x8a  <Block>
+    .bss               zero     0x1fff04d8    0x10  adc.o [1]
+    .bss               zero     0x1fff04e8     0x4  calculation.o [1]
+    .bss               zero     0x1fff04ec     0x4  calculation.o [1]
+    .bss               zero     0x1fff04f0     0x4  calculation.o [1]
+    .bss               zero     0x1fff04f4     0x4  calculation.o [1]
+    .bss               zero     0x1fff04f8     0x4  calculation.o [1]
+    .bss               zero     0x1fff04fc     0x4  calculation.o [1]
+    .bss               zero     0x1fff0500     0x4  calculation.o [1]
+    .bss               zero     0x1fff0504     0x4  calculation.o [1]
+    .bss               zero     0x1fff0508     0x4  calculation.o [1]
+    .bss               zero     0x1fff050c     0x4  calculation.o [1]
+    .bss               zero     0x1fff0510    0x2c  MOTOR.o [1]
+    .bss               zero     0x1fff053c     0x4  sysinit.o [1]
+    .bss               zero     0x1fff0540     0x4  sysinit.o [1]
+    .bss               zero     0x1fff0544     0x4  sysinit.o [1]
+    .bss               zero     0x1fff0548     0x2  isr.o [1]
+    .bss               zero     0x1fff054a     0x2  isr.o [1]
+    .bss               zero     0x1fff054c     0x2  isr.o [1]
+    .bss               zero     0x1fff054e     0x2  isr.o [1]
+    .bss               zero     0x1fff0550     0x2  isr.o [1]
+    .bss               zero     0x1fff0552     0x1  isr.o [1]
+    .bss               zero     0x1fff0553     0x1  isr.o [1]
+    .bss               zero     0x1fff0554     0x1  isr.o [1]
+    .bss               zero     0x1fff0555     0x1  isr.o [1]
+    .bss               zero     0x1fff0556     0x1  isr.o [1]
+    .bss               zero     0x1fff0557     0x1  isr.o [1]
+    .bss               zero     0x1fff0558     0x1  isr.o [1]
+    .bss               zero     0x1fff0559     0x1  isr.o [1]
+    .bss               zero     0x1fff055a     0x1  isr.o [1]
+    .bss               zero     0x1fff055b     0x1  isr.o [1]
+    .bss               zero     0x1fff055c     0x1  isr.o [1]
+    .bss               zero     0x1fff055d     0x1  isr.o [1]
+    .bss               zero     0x1fff055e     0x1  isr.o [1]
+    .bss               zero     0x1fff055f     0x1  isr.o [1]
+    .bss               zero     0x1fff0560     0x1  isr.o [1]
+    .bss               zero     0x1fff0561     0x1  isr.o [1]
+                              - 0x1fff0562    0x8a
 
 
 *******************************************************************************
@@ -302,8 +310,8 @@ __SystemLibrary = DLib
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x72:
-          0x1fff04c0  0x72
+    1 destination range, total size 0x8a:
+          0x1fff04d8  0x8a
 
 
 
@@ -314,22 +322,18 @@ Zero (__iar_zero_init3)
     Module            ro code  rw code  ro data  rw data
     ------            -------  -------  -------  -------
 F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj: [1]
-    FTM.o                 980                92       12
-    MOTOR.o               352                 4       56
+    MOTOR.o                                           44
     PIT.o                 112
     adc.o                 874                88       24
     arm_cm4.o             296               116
     assert.o               24                72
-    calculation.o         224
+    calculation.o         736                80       80
     crt0.o                 60
-    display.o             444
     gpio.o                196               120       40
     io.o                   16
     isr.o               1 156                88       26
-    main.o                208
+    main.o                188
     mcg.o                 756       80       88        8
-    nokia.o               488               476
-    power.o               116                          8
     printf.o            1 760
     start.o             1 312             1 176
     startup.o             192
@@ -339,7 +343,7 @@ F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\O
     vectors.o              24             1 088
     wdog.o                 56
     ----------------------------------------------------
-    Total:             10 350       80    3 432      210
+    Total:              8 462       80    2 940      258
 
 command line: [2]
     ----------------------------------------------------
@@ -362,17 +366,17 @@ m7M_tl.a: [4]
     DblToFlt.o            144
     DblToI32.o             76
     FltAdd.o              132
-    FltCmpLe.o             36
+    FltDiv.o              252
     FltMul.o              216
     FltSub.o              230
-    FltToS32.o             68
+    FltToDbl.o             78
     I32ToDbl.o             48
     atan2.o               204
     modf.o                184
     xatan.o               480
     xdtest.o               50
     ----------------------------------------------------
-    Total:              3 588
+    Total:              3 814
 
 rt7M_tl.a: [5]
     cexit.o                10
@@ -388,10 +392,10 @@ shb_l.a: [6]
     ----------------------------------------------------
     Total:                 20
 
-    Gaps                   20
+    Gaps                   20                 2
     Linker created          8                16
 --------------------------------------------------------
-    Grand Total:       14 116       80    3 448      210
+    Grand Total:       12 454       80    2 958      258
 
 
 *******************************************************************************
@@ -400,157 +404,153 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.bss$$Base              0x1fff04c0          --   Gb  - Linker created -
-.bss$$Limit             0x1fff0532          --   Gb  - Linker created -
+.bss$$Base              0x1fff04d8          --   Gb  - Linker created -
+.bss$$Limit             0x1fff0562          --   Gb  - Linker created -
 .data$$Base             0x1fff0410          --   Gb  - Linker created -
-.data$$Limit            0x1fff0470          --   Gb  - Linker created -
-.data_init$$Base        0x00003c70          --   Gb  - Linker created -
-.data_init$$Limit       0x00003cd0          --   Gb  - Linker created -
-?main                   0x0000414d         Code  Gb  cmain.o [5]
+.data$$Limit            0x1fff0488          --   Gb  - Linker created -
+.data_init$$Base        0x00003454          --   Gb  - Linker created -
+.data_init$$Limit       0x000034cc          --   Gb  - Linker created -
+?main                   0x000038e5         Code  Gb  cmain.o [5]
+A1_2                    0x1fff0418    0x4  Data  Gb  calculation.o [1]
 ADCx                    0x1fff0410    0x8  Data  Gb  adc.o [1]
-ASSERT_FAILED_STR       0x00003e10   0x48  Data  Gb  assert.o [1]
-AngleAcceleration_init  0x00002051   0x1c  Code  Gb  calculation.o [1]
-CodeRelocate$$Base      0x00003dc0          --   Gb  - Linker created -
-CodeRelocate$$Limit     0x00003e10          --   Gb  - Linker created -
-CodeRelocateRam$$Base   0x1fff0470          --   Gb  - Linker created -
-CodeRelocateRam$$Limit  0x1fff04c0          --   Gb  - Linker created -
-DMA_CH0_Handler         0x000039cd   0x22  Code  Gb  isr.o [1]
-DMA_CH4_Handler         0x000039a5   0x28  Code  Gb  isr.o [1]
-DMA_Over_Flg            0x1fff0530    0x1  Data  Gb  isr.o [1]
-FTM0_IRQHandler         0x00003947    0x2  Code  Gb  isr.o [1]
-FTM1_IRQHandler         0x00003949   0x5c  Code  Gb  isr.o [1]
-FTM_PWM_Duty            0x0000317d   0x72  Code  Gb  FTM.o [1]
-FTM_PWM_init            0x00002e65  0x318  Code  Gb  FTM.o [1]
-FTMx                    0x1fff0418    0xc  Data  Gb  FTM.o [1]
-GPIOx                   0x1fff0424   0x14  Data  Gb  gpio.o [1]
-HardFault_Handler       0x0000372b    0xc  Code  Gb  isr.o [1]
-LCDTIME                 0x00001f09    0xc  Code  Gb  display.o [1]
-LCD_KEY_init            0x00001e95   0x74  Code  Gb  display.o [1]
-LCD_clear               0x00002405   0x2a  Code  Gb  nokia.o [1]
-LCD_init                0x000024bd   0x80  Code  Gb  nokia.o [1]
-LCD_set_XY              0x0000253d   0x20  Code  Gb  nokia.o [1]
-LCD_write_byte          0x0000242f   0x8e  Code  Gb  nokia.o [1]
-LCD_write_char          0x0000255d   0x46  Code  Gb  nokia.o [1]
-LPT_Handler             0x000039ef   0x18  Code  Gb  isr.o [1]
-LPT_INT_count           0x1fff0531    0x1  Data  Gb  isr.o [1]
-Master_Adc_Config       0x1fff04c0   0x10  Data  Gb  adc.o [1]
-PIT0_IRQHandler         0x00003647   0xe0  Code  Gb  isr.o [1]
-PIT1_IRQHandler         0x00003635   0x12  Code  Gb  isr.o [1]
-PIT2_IRQHandler         0x000038a1   0xa6  Code  Gb  isr.o [1]
-PORTB_IRQHandler        0x00003865   0x3c  Code  Gb  isr.o [1]
-PORTD_IRQHandler        0x00003737  0x12e  Code  Gb  isr.o [1]
-PORTX                   0x1fff0438   0x14  Data  Gb  gpio.o [1]
-PendSV_Handler          0x00003729    0x2  Code  Gb  isr.o [1]
-Region$$Table$$Base     0x00004028          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00004038          --   Gb  - Linker created -
+ASSERT_FAILED_STR       0x000035bc   0x48  Data  Gb  assert.o [1]
+AngleAcceleration_init  0x00001e81   0x1c  Code  Gb  calculation.o [1]
+B1_1                    0x1fff041c    0x4  Data  Gb  calculation.o [1]
+CodeRelocate$$Base      0x0000356c          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x000035bc          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff0488          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff04d8          --   Gb  - Linker created -
+DMA_CH0_Handler         0x0000338d   0x22  Code  Gb  isr.o [1]
+DMA_CH4_Handler         0x00003365   0x28  Code  Gb  isr.o [1]
+DMA_Over_Flg            0x1fff0560    0x1  Data  Gb  isr.o [1]
+FTM0_IRQHandler         0x00003307    0x2  Code  Gb  isr.o [1]
+FTM1_IRQHandler         0x00003309   0x5c  Code  Gb  isr.o [1]
+GPIOx                   0x1fff0440   0x14  Data  Gb  gpio.o [1]
+HardFault_Handler       0x000030eb    0xc  Code  Gb  isr.o [1]
+I1_1                    0x1fff043c    0x4  Data  Gb  calculation.o [1]
+K1_1                    0x1fff04f8    0x4  Data  Gb  calculation.o [1]
+K2_1                    0x1fff04fc    0x4  Data  Gb  calculation.o [1]
+Kalman_filter           0x00001f19  0x1dc  Code  Gb  calculation.o [1]
+LPT_Handler             0x000033af   0x18  Code  Gb  isr.o [1]
+LPT_INT_count           0x1fff0561    0x1  Data  Gb  isr.o [1]
+Master_Adc_Config       0x1fff04d8   0x10  Data  Gb  adc.o [1]
+PIT0_IRQHandler         0x00003007   0xe0  Code  Gb  isr.o [1]
+PIT1_IRQHandler         0x00002ff5   0x12  Code  Gb  isr.o [1]
+PIT2_IRQHandler         0x00003261   0xa6  Code  Gb  isr.o [1]
+PORTB_IRQHandler        0x00003225   0x3c  Code  Gb  isr.o [1]
+PORTD_IRQHandler        0x000030f7  0x12e  Code  Gb  isr.o [1]
+PORTX                   0x1fff0454   0x14  Data  Gb  gpio.o [1]
+PendSV_Handler          0x000030e9    0x2  Code  Gb  isr.o [1]
+Pest1_1                 0x1fff04e8    0x4  Data  Gb  calculation.o [1]
+Pest1_2                 0x1fff04ec    0x4  Data  Gb  calculation.o [1]
+Pest2_1                 0x1fff04f0    0x4  Data  Gb  calculation.o [1]
+Pest2_2                 0x1fff04f4    0x4  Data  Gb  calculation.o [1]
+Psta1_1                 0x1fff0420    0x4  Data  Gb  calculation.o [1]
+Psta1_2                 0x1fff0424    0x4  Data  Gb  calculation.o [1]
+Psta2_1                 0x1fff0428    0x4  Data  Gb  calculation.o [1]
+Psta2_2                 0x1fff042c    0x4  Data  Gb  calculation.o [1]
+Q1_1                    0x1fff0430    0x4  Data  Gb  calculation.o [1]
+Q2_2                    0x1fff0434    0x4  Data  Gb  calculation.o [1]
+R                       0x1fff0438    0x4  Data  Gb  calculation.o [1]
+Region$$Table$$Base     0x000037c0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000037d0          --   Gb  - Linker created -
 Reset_Handler           0x00000411         Code  Gb  crt0.o [1]
-SysTick_Handler         0x00003727    0x2  Code  Gb  isr.o [1]
-TIME0flag_10ms          0x1fff0523    0x1  Data  Gb  isr.o [1]
-TIME0flag_15ms          0x1fff0524    0x1  Data  Gb  isr.o [1]
-TIME0flag_20ms          0x1fff0525    0x1  Data  Gb  isr.o [1]
-TIME0flag_5ms           0x1fff0522    0x1  Data  Gb  isr.o [1]
-TIME0flag_80ms          0x1fff0526    0x1  Data  Gb  isr.o [1]
-TIME1flag_1s            0x1fff0527    0x1  Data  Gb  isr.o [1]
-TimeCount               0x1fff0518    0x2  Data  Gb  isr.o [1]
-UARTx                   0x1fff0458   0x18  Data  Gb  uart.o [1]
-USART1_IRQHandler       0x00003611   0x24  Code  Gb  isr.o [1]
+SysTick_Handler         0x000030e7    0x2  Code  Gb  isr.o [1]
+TIME0flag_10ms          0x1fff0553    0x1  Data  Gb  isr.o [1]
+TIME0flag_15ms          0x1fff0554    0x1  Data  Gb  isr.o [1]
+TIME0flag_20ms          0x1fff0555    0x1  Data  Gb  isr.o [1]
+TIME0flag_5ms           0x1fff0552    0x1  Data  Gb  isr.o [1]
+TIME0flag_80ms          0x1fff0556    0x1  Data  Gb  isr.o [1]
+TIME1flag_1s            0x1fff0557    0x1  Data  Gb  isr.o [1]
+TimeCount               0x1fff0548    0x2  Data  Gb  isr.o [1]
+UARTx                   0x1fff0470   0x18  Data  Gb  uart.o [1]
+USART1_IRQHandler       0x00002fd1   0x24  Code  Gb  isr.o [1]
+Xest1_1                 0x1fff0500    0x4  Data  Gb  calculation.o [1]
+Xest2_1                 0x1fff0504    0x4  Data  Gb  calculation.o [1]
+Xsta1_1                 0x1fff0508    0x4  Data  Gb  calculation.o [1]
+Xsta2_1                 0x1fff050c    0x4  Data  Gb  calculation.o [1]
 __BOOT_STACK_ADDRESS {Abs}
                         0x2000fff8          --   Gb  command line/config [2]
 __VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
 __VECTOR_TABLE {Abs}    0x00000000          --   Gb  command line/config [2]
 __aeabi_cdcmpeq         0x00000b2d         Code  Gb  DblCmpEq.o [4]
 __aeabi_cdcmple         0x00000f2d         Code  Gb  DblCmpLe.o [4]
-__aeabi_cdrcmple        0x000035e1         Code  Gb  DblCmpGe.o [4]
-__aeabi_cfcmple         0x00003239         Code  Gb  FltCmpLe.o [4]
-__aeabi_d2f             0x00002cf1         Code  Gb  DblToFlt.o [4]
+__aeabi_cdrcmple        0x00002fa1         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x00002849         Code  Gb  DblToFlt.o [4]
 __aeabi_d2iz            0x00000ee1         Code  Gb  DblToI32.o [4]
 __aeabi_dadd            0x00000df9         Code  Gb  DblAdd.o [4]
-__aeabi_ddiv            0x00002aa9         Code  Gb  DblDiv.o [4]
+__aeabi_ddiv            0x00002601         Code  Gb  DblDiv.o [4]
 __aeabi_dmul            0x00000c35         Code  Gb  DblMul.o [4]
-__aeabi_f2iz            0x000026f9         Code  Gb  FltToS32.o [4]
-__aeabi_fadd            0x00003345         Code  Gb  FltAdd.o [4]
-__aeabi_fmul            0x00002621         Code  Gb  FltMul.o [4]
-__aeabi_fsub            0x0000325d         Code  Gb  FltSub.o [4]
+__aeabi_f2d             0x00002ce5         Code  Gb  FltToDbl.o [4]
+__aeabi_fadd            0x00002a7d         Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x00002b01         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000029a5         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x00002bfd         Code  Gb  FltSub.o [4]
 __aeabi_i2d             0x00000c05         Code  Gb  I32ToDbl.o [4]
 __aeabi_ui2d            0x00000c19         Code  Gb  I32ToDbl.o [4]
-__cmain                 0x0000414d         Code  Gb  cmain.o [5]
+__cmain                 0x000038e5         Code  Gb  cmain.o [5]
 __code_start__ {Abs}    0x00000410          --   Gb  command line/config [2]
-__exit                  0x0000417d   0x14  Code  Gb  exit.o [6]
-__iar_Atan              0x00003401  0x148  Code  Gb  xatan.o [4]
-__iar_Dtest             0x000033c9   0x32  Code  Gb  xdtest.o [4]
+__exit                  0x00003915   0x14  Code  Gb  exit.o [6]
+__iar_Atan              0x00002dc1  0x148  Code  Gb  xatan.o [4]
+__iar_Dtest             0x00002d4d   0x32  Code  Gb  xdtest.o [4]
 __iar_d2uiz             0x00000f0d         Code  Gb  DblToI32.o [4]
 __iar_dadd              0x00000e0d         Code  Gb  DblAdd.o [4]
-__iar_data_init3        0x00004001   0x28  Code  Gb  data_init.o [5]
+__iar_data_init3        0x00003799   0x28  Code  Gb  data_init.o [5]
 __iar_dsub              0x00000f7d         Code  Gb  DblSub.o [4]
 __iar_dsubStart         0x00000f8f         Code  Gb  DblSub.o [4]
-__iar_fadd              0x00003355         Code  Gb  FltAdd.o [4]
-__iar_fsub              0x0000326d         Code  Gb  FltSub.o [4]
-__iar_fsubStart         0x0000327d         Code  Gb  FltSub.o [4]
+__iar_fadd              0x00002a8d         Code  Gb  FltAdd.o [4]
+__iar_fsub              0x00002c0d         Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x00002c1d         Code  Gb  FltSub.o [4]
 __iar_modf              0x00000b5d         Code  Gb  modf.o [4]
 __iar_modfl             0x00000b5d         Code  Gb  modf.o [4]
-__iar_program_start     0x00004451         Code  Gb  cstartup_M.o [5]
+__iar_program_start     0x00003be9         Code  Gb  cstartup_M.o [5]
 __iar_ui2d              0x00000c1d         Code  Gb  I32ToDbl.o [4]
 __iar_zero_init3        0x00000dd7   0x22  Code  Gb  zero_init3.o [5]
-__low_level_init        0x00004167    0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x000038ff    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x00000000  0x410  Data  Gb  vectors.o [1]
-_call_main              0x00004159         Code  Gb  cmain.o [5]
-_exit                   0x00004171         Code  Gb  cexit.o [5]
-_main                   0x00004163         Code  Gb  cmain.o [5]
-a                       0x000035a0   0x40  Data  Lc  xatan.o [4]
-ad_aveN                 0x00002977   0xa0  Code  Gb  adc.o [1]
-adc_config_alt          0x00002a81   0x26  Code  Lc  adc.o [1]
-adc_init                0x0000273d  0x23a  Code  Gb  adc.o [1]
-adc_start               0x00002a17   0x48  Code  Gb  adc.o [1]
-angle_display           0x00001fa1   0xaa  Code  Gb  display.o [1]
-angle_get               0x00002095   0x86  Code  Gb  calculation.o [1]
-angular_get             0x0000206d   0x28  Code  Gb  calculation.o [1]
-assert_failed           0x00002e4d   0x18  Code  Gb  assert.o [1]
-atan2                   0x00002d81   0xcc  Code  Gb  atan2.o [4]
-balance_d               0x1fff0454    0x4  Data  Gb  MOTOR.o [1]
-balance_duty            0x000022a1   0x74  Code  Gb  MOTOR.o [1]
-balance_p               0x1fff0500    0x4  Data  Gb  MOTOR.o [1]
-balance_run             0x00002315   0x86  Code  Gb  MOTOR.o [1]
-bus_clk_khz             0x1fff0514    0x4  Data  Gb  sysinit.o [1]
-car                     0x1fff04d4   0x2c  Data  Gb  MOTOR.o [1]
+_call_main              0x000038f1         Code  Gb  cmain.o [5]
+_exit                   0x00003909         Code  Gb  cexit.o [5]
+_main                   0x000038fb         Code  Gb  cmain.o [5]
+a                       0x00002f60   0x40  Data  Lc  xatan.o [4]
+ad_aveN                 0x000024cf   0xa0  Code  Gb  adc.o [1]
+adc_config_alt          0x000025d9   0x26  Code  Lc  adc.o [1]
+adc_init                0x00002295  0x23a  Code  Gb  adc.o [1]
+adc_start               0x0000256f   0x48  Code  Gb  adc.o [1]
+angle_get               0x00001ec5   0x54  Code  Gb  calculation.o [1]
+angular_get             0x00001e9d   0x28  Code  Gb  calculation.o [1]
+assert_failed           0x00002d35   0x18  Code  Gb  assert.o [1]
+atan2                   0x000028d9   0xcc  Code  Gb  atan2.o [4]
+bus_clk_khz             0x1fff0544    0x4  Data  Gb  sysinit.o [1]
+car                     0x1fff0510   0x2c  Data  Gb  MOTOR.o [1]
 common_startup          0x00001641   0xc0  Code  Gb  startup.o [1]
-core_clk_khz            0x1fff050c    0x4  Data  Gb  sysinit.o [1]
-core_clk_mhz            0x1fff0510    0x4  Data  Gb  sysinit.o [1]
+core_clk_khz            0x1fff053c    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff0540    0x4  Data  Gb  sysinit.o [1]
 cpu_identify            0x00001217  0x20a  Code  Gb  start.o [1]
-default_isr             0x00004251   0x18  Code  Gb  vectors.o [1]
-delay_1ns               0x000023e5   0x20  Code  Gb  nokia.o [1]
-delay_1us               0x000023c5   0x20  Code  Gb  nokia.o [1]
-disable_irq             0x000018c7   0x5e  Code  Gb  arm_cm4.o [1]
-enable_irq              0x00001833   0x94  Code  Gb  arm_cm4.o [1]
-exit                    0x0000416b    0x4  Code  Gb  exit.o [3]
+default_isr             0x000039e9   0x18  Code  Gb  vectors.o [1]
+disable_irq             0x000018b3   0x5e  Code  Gb  arm_cm4.o [1]
+enable_irq              0x0000181f   0x94  Code  Gb  arm_cm4.o [1]
+exit                    0x00003903    0x4  Code  Gb  exit.o [3]
 flash_identify          0x00001421   0xbe  Code  Gb  start.o [1]
-font5x8                 0x00003a94  0x1dc  Data  Gb  nokia.o [1]
-gpio_init               0x00002131   0xb6  Code  Gb  gpio.o [1]
-key10cout               0x1fff051e    0x2  Data  Gb  isr.o [1]
-key10flg                0x1fff052d    0x1  Data  Gb  isr.o [1]
-key10start              0x1fff052c    0x1  Data  Gb  isr.o [1]
-key11cout               0x1fff0520    0x2  Data  Gb  isr.o [1]
-key11flg                0x1fff052f    0x1  Data  Gb  isr.o [1]
-key11start              0x1fff052e    0x1  Data  Gb  isr.o [1]
-key8cout                0x1fff051a    0x2  Data  Gb  isr.o [1]
-key8flg                 0x1fff0529    0x1  Data  Gb  isr.o [1]
-key8start               0x1fff0528    0x1  Data  Gb  isr.o [1]
-key9cout                0x1fff051c    0x2  Data  Gb  isr.o [1]
-key9flg                 0x1fff052b    0x1  Data  Gb  isr.o [1]
-key9start               0x1fff052a    0x1  Data  Gb  isr.o [1]
-main                    0x0000175d   0xd0  Code  Gb  main.o [1]
-mcg_div                 0x1fff044c    0x8  Data  Gb  mcg.o [1]
+gpio_init               0x00002161   0xb6  Code  Gb  gpio.o [1]
+key10cout               0x1fff054e    0x2  Data  Gb  isr.o [1]
+key10flg                0x1fff055d    0x1  Data  Gb  isr.o [1]
+key10start              0x1fff055c    0x1  Data  Gb  isr.o [1]
+key11cout               0x1fff0550    0x2  Data  Gb  isr.o [1]
+key11flg                0x1fff055f    0x1  Data  Gb  isr.o [1]
+key11start              0x1fff055e    0x1  Data  Gb  isr.o [1]
+key8cout                0x1fff054a    0x2  Data  Gb  isr.o [1]
+key8flg                 0x1fff0559    0x1  Data  Gb  isr.o [1]
+key8start               0x1fff0558    0x1  Data  Gb  isr.o [1]
+key9cout                0x1fff054c    0x2  Data  Gb  isr.o [1]
+key9flg                 0x1fff055b    0x1  Data  Gb  isr.o [1]
+key9start               0x1fff055a    0x1  Data  Gb  isr.o [1]
+main                    0x0000175d   0xbc  Code  Gb  main.o [1]
+mcg_div                 0x1fff0468    0x8  Data  Gb  mcg.o [1]
 modf                    0x00000b4d         Code  Gb  modf.o [4]
 modfl                   0x00000b4d         Code  Gb  modf.o [4]
-motor                   0x1fff04d0    0x4  Data  Gb  MOTOR.o [1]
-motor_init              0x00002265   0x3c  Code  Gb  MOTOR.o [1]
-motor_set               0x0000239b    0xe  Code  Gb  MOTOR.o [1]
-out_char                0x00004411   0x10  Code  Gb  io.o [1]
-pit_init                0x000021f5   0x62  Code  Gb  PIT.o [1]
-pll_init                0x0000195d  0x2f4  Code  Gb  mcg.o [1]
-power                   0x1fff0504    0x4  Data  Gb  power.o [1]
-power_display           0x00001f15   0x8c  Code  Gb  display.o [1]
-power_get               0x000025ad   0x74  Code  Gb  power.o [1]
-prepower_int            0x1fff0508    0x4  Data  Gb  power.o [1]
+out_char                0x00003ba9   0x10  Code  Gb  io.o [1]
+pit_init                0x00002225   0x62  Code  Gb  PIT.o [1]
+pll_init                0x00001949  0x2f4  Code  Gb  mcg.o [1]
 printf                  0x00000aff   0x26  Code  Gb  printf.o [1]
 printk                  0x00000669  0x496  Code  Gb  printf.o [1]
 printk_mkfloatnumstr    0x00000529   0xf4  Code  Lc  printf.o [1]
@@ -558,17 +558,17 @@ printk_mknumstr         0x0000047f   0xaa  Code  Lc  printf.o [1]
 printk_pad_space        0x00000643   0x26  Code  Lc  printf.o [1]
 printk_pad_zero         0x0000061d   0x26  Code  Lc  printf.o [1]
 printk_putc             0x0000044d   0x32  Code  Lc  printf.o [1]
-set_sys_dividers        0x1fff0471   0x50  Code  Gb  mcg.o [1]
+set_sys_dividers        0x1fff0489   0x50  Code  Gb  mcg.o [1]
 start                   0x000010e9  0x12e  Code  Gb  start.o [1]
 strlen                  0x00000f5b   0x20  Code  Gb  stdlib.o [1]
 sysinit                 0x00001701   0x48  Code  Gb  sysinit.o [1]
-uart_getchar            0x00001e01   0x1a  Code  Gb  uart.o [1]
-uart_init               0x00001c51  0x1b0  Code  Gb  uart.o [1]
-uart_putchar            0x00001e1b   0x1a  Code  Gb  uart.o [1]
-uart_sendStr            0x00001e35   0x1c  Code  Gb  uart.o [1]
+uart_getchar            0x00001ded   0x1a  Code  Gb  uart.o [1]
+uart_init               0x00001c3d  0x1b0  Code  Gb  uart.o [1]
+uart_putchar            0x00001e07   0x1a  Code  Gb  uart.o [1]
+uart_sendStr            0x00001e21   0x1c  Code  Gb  uart.o [1]
 wdog_disable            0x00001609   0x16  Code  Gb  wdog.o [1]
 wdog_unlock             0x00001621   0x16  Code  Gb  wdog.o [1]
-write_vtor              0x0000182d    0x6  Code  Gb  arm_cm4.o [1]
+write_vtor              0x00001819    0x6  Code  Gb  arm_cm4.o [1]
 
 
 [1] = F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj
@@ -578,10 +578,10 @@ write_vtor              0x0000182d    0x6  Code  Gb  arm_cm4.o [1]
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  14 116 bytes of readonly  code memory
+  12 454 bytes of readonly  code memory
       80 bytes of readwrite code memory
-   3 448 bytes of readonly  data memory
-     210 bytes of readwrite data memory
+   2 958 bytes of readonly  data memory
+     258 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

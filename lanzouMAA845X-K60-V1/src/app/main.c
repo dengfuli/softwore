@@ -27,8 +27,7 @@ extern u8 TIME0flag_10ms  ;
 extern u8 TIME0flag_15ms  ;
 extern u8 TIME0flag_20ms  ;
 extern u8 TIME1flag_1s ;
-extern u8 ar1_ad;
-extern u8 ar2_ad;
+
 s16 CAR_ANGLE_SET = 1754 ;
 s16 CAR_GYRO_SET =  1960 ;
 
@@ -40,7 +39,7 @@ void main()
       DisableInterrupts;                             //禁止总中断 
       
 
-      LCD_KEY_init();
+    //  LCD_KEY_init();
       AngleAcceleration_init();
       uart_init (UART5 , 115200);                      //初始化UART0，输出脚PTA15，输入脚PTA14，串口频率 9600
       gpio_init (PORTA , 17, GPO,HIGH); 
@@ -48,7 +47,7 @@ void main()
       pit_init_ms(PIT1, 100);
       //初始化PIT0，定时时间为： 5ms
 
-      motor_init();
+   //   motor_init();
      
    // FTM_PWM_init(FTM0, CH4, 35000, 0);//left go PTD4
    // FTM_PWM_init(FTM0, CH5, 35000, 0);//right go  PTD5
@@ -63,14 +62,14 @@ void main()
     ******************************************/
     while(1)
     {
-       
-        angular_get();
-        LCDTIME();
-        balance_duty();
-        motor_set();
+      //  angular_get();
+      //  angle_get();
+        Kalman_filter();
+     //   LCDTIME();
+     //   balance_duty();
+     //   motor_set();
            
-       //  Kalman_filter();
-         
+      //  DELAY_MS(2); 
          
        //  key_speed();
         // carrun();
@@ -113,7 +112,7 @@ void main()
       {
         TIME0flag_20ms = 0 ;
      //   uart_putchar(UART0,0xff);
-       
+        
       }
       
       
@@ -121,7 +120,7 @@ void main()
       {
        PTA17_OUT = ~PTA17_OUT ; 
         TIME1flag_1s = 0 ; 
-
+        
      
       }
 
