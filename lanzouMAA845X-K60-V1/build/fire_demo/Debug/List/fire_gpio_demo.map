@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.10.1.6676/W32 for ARM                 22/Jan/2015  17:36:33
+# IAR ELF Linker V7.10.1.6676/W32 for ARM                 23/Jan/2015  15:10:50
 # Copyright 2007-2014 IAR Systems AB.
 #
 #    Output file  =  
@@ -14,6 +14,8 @@
 #        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\adc.o"
 #        "F:\freescale\my
 #        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\alloc.o"
+#        "F:\freescale\my
+#        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\AngleAcceleration.o"
 #        "F:\freescale\my
 #        project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj\arm_cm4.o"
 #        "F:\freescale\my
@@ -141,7 +143,7 @@ __SystemLibrary = DLib
   Veneer               ro code  0x00001940     0x8  - Linker created -
   .text                ro code  0x00001948   0x2f4  mcg.o [1]
   .text                ro code  0x00001c3c   0x244  uart.o [1]
-  .text                ro code  0x00001e80   0x2e0  calculation.o [1]
+  .text                ro code  0x00001e80   0x2e0  AngleAcceleration.o [1]
   .text                ro code  0x00002160    0xc4  gpio.o [1]
   .text                ro code  0x00002224    0x70  PIT.o [1]
   .text                ro code  0x00002294   0x36a  adc.o [1]
@@ -171,7 +173,7 @@ __SystemLibrary = DLib
   .rodata              const    0x0000368c    0x38  arm_cm4.o [1]
   .rodata              const    0x000036c4    0x30  vectors.o [1]
   .rodata              const    0x000036f4    0x2c  start.o [1]
-  .rodata              const    0x00003720    0x28  calculation.o [1]
+  .rodata              const    0x00003720    0x28  AngleAcceleration.o [1]
   .rodata              const    0x00003748    0x28  start.o [1]
   .rodata              const    0x00003770    0x28  start.o [1]
   .text                ro code  0x00003798    0x28  data_init.o [5]
@@ -243,16 +245,16 @@ __SystemLibrary = DLib
   .data                         0x1fff0410    0x78  <Block>
     .data-1                     0x1fff0410    0x78  <Init block>
       .data            inited   0x1fff0410     0x8  adc.o [1]
-      .data            inited   0x1fff0418     0x4  calculation.o [1]
-      .data            inited   0x1fff041c     0x4  calculation.o [1]
-      .data            inited   0x1fff0420     0x4  calculation.o [1]
-      .data            inited   0x1fff0424     0x4  calculation.o [1]
-      .data            inited   0x1fff0428     0x4  calculation.o [1]
-      .data            inited   0x1fff042c     0x4  calculation.o [1]
-      .data            inited   0x1fff0430     0x4  calculation.o [1]
-      .data            inited   0x1fff0434     0x4  calculation.o [1]
-      .data            inited   0x1fff0438     0x4  calculation.o [1]
-      .data            inited   0x1fff043c     0x4  calculation.o [1]
+      .data            inited   0x1fff0418     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff041c     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0420     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0424     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0428     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff042c     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0430     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0434     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff0438     0x4  AngleAcceleration.o [1]
+      .data            inited   0x1fff043c     0x4  AngleAcceleration.o [1]
       .data            inited   0x1fff0440    0x14  gpio.o [1]
       .data            inited   0x1fff0454    0x14  gpio.o [1]
       .data            inited   0x1fff0468     0x8  mcg.o [1]
@@ -265,16 +267,16 @@ __SystemLibrary = DLib
 "P2", part 2 of 2:                            0x8a
   .bss                          0x1fff04d8    0x8a  <Block>
     .bss               zero     0x1fff04d8    0x10  adc.o [1]
-    .bss               zero     0x1fff04e8     0x4  calculation.o [1]
-    .bss               zero     0x1fff04ec     0x4  calculation.o [1]
-    .bss               zero     0x1fff04f0     0x4  calculation.o [1]
-    .bss               zero     0x1fff04f4     0x4  calculation.o [1]
-    .bss               zero     0x1fff04f8     0x4  calculation.o [1]
-    .bss               zero     0x1fff04fc     0x4  calculation.o [1]
-    .bss               zero     0x1fff0500     0x4  calculation.o [1]
-    .bss               zero     0x1fff0504     0x4  calculation.o [1]
-    .bss               zero     0x1fff0508     0x4  calculation.o [1]
-    .bss               zero     0x1fff050c     0x4  calculation.o [1]
+    .bss               zero     0x1fff04e8     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff04ec     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff04f0     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff04f4     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff04f8     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff04fc     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff0500     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff0504     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff0508     0x4  AngleAcceleration.o [1]
+    .bss               zero     0x1fff050c     0x4  AngleAcceleration.o [1]
     .bss               zero     0x1fff0510    0x2c  MOTOR.o [1]
     .bss               zero     0x1fff053c     0x4  sysinit.o [1]
     .bss               zero     0x1fff0540     0x4  sysinit.o [1]
@@ -319,83 +321,83 @@ Zero (__iar_zero_init3)
 *** MODULE SUMMARY
 ***
 
-    Module            ro code  rw code  ro data  rw data
-    ------            -------  -------  -------  -------
+    Module               ro code  rw code  ro data  rw data
+    ------               -------  -------  -------  -------
 F:\freescale\my project\k60-project\lanzouMAA845X-K60-V1\build\fire_demo\Debug\Obj: [1]
-    MOTOR.o                                           44
-    PIT.o                 112
-    adc.o                 874                88       24
-    arm_cm4.o             296               116
-    assert.o               24                72
-    calculation.o         736                80       80
-    crt0.o                 60
-    gpio.o                196               120       40
-    io.o                   16
-    isr.o               1 156                88       26
-    main.o                188
-    mcg.o                 756       80       88        8
-    printf.o            1 760
-    start.o             1 312             1 176
-    startup.o             192
-    stdlib.o               32
-    sysinit.o              92                         12
-    uart.o                580                24       24
-    vectors.o              24             1 088
-    wdog.o                 56
-    ----------------------------------------------------
-    Total:              8 462       80    2 940      258
+    AngleAcceleration.o      736                80       80
+    MOTOR.o                                              44
+    PIT.o                    112
+    adc.o                    874                88       24
+    arm_cm4.o                296               116
+    assert.o                  24                72
+    crt0.o                    60
+    gpio.o                   196               120       40
+    io.o                      16
+    isr.o                  1 156                88       26
+    main.o                   188
+    mcg.o                    756       80       88        8
+    printf.o               1 760
+    start.o                1 312             1 176
+    startup.o                192
+    stdlib.o                  32
+    sysinit.o                 92                         12
+    uart.o                   580                24       24
+    vectors.o                 24             1 088
+    wdog.o                    56
+    -------------------------------------------------------
+    Total:                 8 462       80    2 940      258
 
 command line: [2]
-    ----------------------------------------------------
+    -------------------------------------------------------
     Total:
 
 dl7M_tln.a: [3]
-    exit.o                  4
-    low_level_init.o        4
-    ----------------------------------------------------
-    Total:                  8
+    exit.o                     4
+    low_level_init.o           4
+    -------------------------------------------------------
+    Total:                     8
 
 m7M_tl.a: [4]
-    DblAdd.o              232
-    DblCmpEq.o             32
-    DblCmpGe.o             46
-    DblCmpLe.o             46
-    DblDiv.o              582
-    DblMul.o              418
-    DblSub.o              364
-    DblToFlt.o            144
-    DblToI32.o             76
-    FltAdd.o              132
-    FltDiv.o              252
-    FltMul.o              216
-    FltSub.o              230
-    FltToDbl.o             78
-    I32ToDbl.o             48
-    atan2.o               204
-    modf.o                184
-    xatan.o               480
-    xdtest.o               50
-    ----------------------------------------------------
-    Total:              3 814
+    DblAdd.o                 232
+    DblCmpEq.o                32
+    DblCmpGe.o                46
+    DblCmpLe.o                46
+    DblDiv.o                 582
+    DblMul.o                 418
+    DblSub.o                 364
+    DblToFlt.o               144
+    DblToI32.o                76
+    FltAdd.o                 132
+    FltDiv.o                 252
+    FltMul.o                 216
+    FltSub.o                 230
+    FltToDbl.o                78
+    I32ToDbl.o                48
+    atan2.o                  204
+    modf.o                   184
+    xatan.o                  480
+    xdtest.o                  50
+    -------------------------------------------------------
+    Total:                 3 814
 
 rt7M_tl.a: [5]
-    cexit.o                10
-    cmain.o                26
-    cstartup_M.o           12
-    data_init.o            40
-    zero_init3.o           34
-    ----------------------------------------------------
-    Total:                122
+    cexit.o                   10
+    cmain.o                   26
+    cstartup_M.o              12
+    data_init.o               40
+    zero_init3.o              34
+    -------------------------------------------------------
+    Total:                   122
 
 shb_l.a: [6]
-    exit.o                 20
-    ----------------------------------------------------
-    Total:                 20
+    exit.o                    20
+    -------------------------------------------------------
+    Total:                    20
 
-    Gaps                   20                 2
-    Linker created          8                16
---------------------------------------------------------
-    Grand Total:       12 454       80    2 958      258
+    Gaps                      20                 2
+    Linker created             8                16
+-----------------------------------------------------------
+    Grand Total:          12 454       80    2 958      258
 
 
 *******************************************************************************
@@ -411,11 +413,11 @@ Entry                      Address   Size  Type      Object
 .data_init$$Base        0x00003454          --   Gb  - Linker created -
 .data_init$$Limit       0x000034cc          --   Gb  - Linker created -
 ?main                   0x000038e5         Code  Gb  cmain.o [5]
-A1_2                    0x1fff0418    0x4  Data  Gb  calculation.o [1]
+A1_2                    0x1fff0418    0x4  Data  Gb  AngleAcceleration.o [1]
 ADCx                    0x1fff0410    0x8  Data  Gb  adc.o [1]
 ASSERT_FAILED_STR       0x000035bc   0x48  Data  Gb  assert.o [1]
-AngleAcceleration_init  0x00001e81   0x1c  Code  Gb  calculation.o [1]
-B1_1                    0x1fff041c    0x4  Data  Gb  calculation.o [1]
+AngleAcceleration_init  0x00001e81   0x1c  Code  Gb  AngleAcceleration.o [1]
+B1_1                    0x1fff041c    0x4  Data  Gb  AngleAcceleration.o [1]
 CodeRelocate$$Base      0x0000356c          --   Gb  - Linker created -
 CodeRelocate$$Limit     0x000035bc          --   Gb  - Linker created -
 CodeRelocateRam$$Base   0x1fff0488          --   Gb  - Linker created -
@@ -427,10 +429,10 @@ FTM0_IRQHandler         0x00003307    0x2  Code  Gb  isr.o [1]
 FTM1_IRQHandler         0x00003309   0x5c  Code  Gb  isr.o [1]
 GPIOx                   0x1fff0440   0x14  Data  Gb  gpio.o [1]
 HardFault_Handler       0x000030eb    0xc  Code  Gb  isr.o [1]
-I1_1                    0x1fff043c    0x4  Data  Gb  calculation.o [1]
-K1_1                    0x1fff04f8    0x4  Data  Gb  calculation.o [1]
-K2_1                    0x1fff04fc    0x4  Data  Gb  calculation.o [1]
-Kalman_filter           0x00001f19  0x1dc  Code  Gb  calculation.o [1]
+I1_1                    0x1fff043c    0x4  Data  Gb  AngleAcceleration.o [1]
+K1_1                    0x1fff04f8    0x4  Data  Gb  AngleAcceleration.o [1]
+K2_1                    0x1fff04fc    0x4  Data  Gb  AngleAcceleration.o [1]
+Kalman_filter           0x00001f19  0x1dc  Code  Gb  AngleAcceleration.o [1]
 LPT_Handler             0x000033af   0x18  Code  Gb  isr.o [1]
 LPT_INT_count           0x1fff0561    0x1  Data  Gb  isr.o [1]
 Master_Adc_Config       0x1fff04d8   0x10  Data  Gb  adc.o [1]
@@ -441,17 +443,17 @@ PORTB_IRQHandler        0x00003225   0x3c  Code  Gb  isr.o [1]
 PORTD_IRQHandler        0x000030f7  0x12e  Code  Gb  isr.o [1]
 PORTX                   0x1fff0454   0x14  Data  Gb  gpio.o [1]
 PendSV_Handler          0x000030e9    0x2  Code  Gb  isr.o [1]
-Pest1_1                 0x1fff04e8    0x4  Data  Gb  calculation.o [1]
-Pest1_2                 0x1fff04ec    0x4  Data  Gb  calculation.o [1]
-Pest2_1                 0x1fff04f0    0x4  Data  Gb  calculation.o [1]
-Pest2_2                 0x1fff04f4    0x4  Data  Gb  calculation.o [1]
-Psta1_1                 0x1fff0420    0x4  Data  Gb  calculation.o [1]
-Psta1_2                 0x1fff0424    0x4  Data  Gb  calculation.o [1]
-Psta2_1                 0x1fff0428    0x4  Data  Gb  calculation.o [1]
-Psta2_2                 0x1fff042c    0x4  Data  Gb  calculation.o [1]
-Q1_1                    0x1fff0430    0x4  Data  Gb  calculation.o [1]
-Q2_2                    0x1fff0434    0x4  Data  Gb  calculation.o [1]
-R                       0x1fff0438    0x4  Data  Gb  calculation.o [1]
+Pest1_1                 0x1fff04e8    0x4  Data  Gb  AngleAcceleration.o [1]
+Pest1_2                 0x1fff04ec    0x4  Data  Gb  AngleAcceleration.o [1]
+Pest2_1                 0x1fff04f0    0x4  Data  Gb  AngleAcceleration.o [1]
+Pest2_2                 0x1fff04f4    0x4  Data  Gb  AngleAcceleration.o [1]
+Psta1_1                 0x1fff0420    0x4  Data  Gb  AngleAcceleration.o [1]
+Psta1_2                 0x1fff0424    0x4  Data  Gb  AngleAcceleration.o [1]
+Psta2_1                 0x1fff0428    0x4  Data  Gb  AngleAcceleration.o [1]
+Psta2_2                 0x1fff042c    0x4  Data  Gb  AngleAcceleration.o [1]
+Q1_1                    0x1fff0430    0x4  Data  Gb  AngleAcceleration.o [1]
+Q2_2                    0x1fff0434    0x4  Data  Gb  AngleAcceleration.o [1]
+R                       0x1fff0438    0x4  Data  Gb  AngleAcceleration.o [1]
 Region$$Table$$Base     0x000037c0          --   Gb  - Linker created -
 Region$$Table$$Limit    0x000037d0          --   Gb  - Linker created -
 Reset_Handler           0x00000411         Code  Gb  crt0.o [1]
@@ -465,10 +467,10 @@ TIME1flag_1s            0x1fff0557    0x1  Data  Gb  isr.o [1]
 TimeCount               0x1fff0548    0x2  Data  Gb  isr.o [1]
 UARTx                   0x1fff0470   0x18  Data  Gb  uart.o [1]
 USART1_IRQHandler       0x00002fd1   0x24  Code  Gb  isr.o [1]
-Xest1_1                 0x1fff0500    0x4  Data  Gb  calculation.o [1]
-Xest2_1                 0x1fff0504    0x4  Data  Gb  calculation.o [1]
-Xsta1_1                 0x1fff0508    0x4  Data  Gb  calculation.o [1]
-Xsta2_1                 0x1fff050c    0x4  Data  Gb  calculation.o [1]
+Xest1_1                 0x1fff0500    0x4  Data  Gb  AngleAcceleration.o [1]
+Xest2_1                 0x1fff0504    0x4  Data  Gb  AngleAcceleration.o [1]
+Xsta1_1                 0x1fff0508    0x4  Data  Gb  AngleAcceleration.o [1]
+Xsta2_1                 0x1fff050c    0x4  Data  Gb  AngleAcceleration.o [1]
 __BOOT_STACK_ADDRESS {Abs}
                         0x2000fff8          --   Gb  command line/config [2]
 __VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
@@ -516,8 +518,8 @@ ad_aveN                 0x000024cf   0xa0  Code  Gb  adc.o [1]
 adc_config_alt          0x000025d9   0x26  Code  Lc  adc.o [1]
 adc_init                0x00002295  0x23a  Code  Gb  adc.o [1]
 adc_start               0x0000256f   0x48  Code  Gb  adc.o [1]
-angle_get               0x00001ec5   0x54  Code  Gb  calculation.o [1]
-angular_get             0x00001e9d   0x28  Code  Gb  calculation.o [1]
+angle_get               0x00001ec5   0x54  Code  Gb  AngleAcceleration.o [1]
+angular_get             0x00001e9d   0x28  Code  Gb  AngleAcceleration.o [1]
 assert_failed           0x00002d35   0x18  Code  Gb  assert.o [1]
 atan2                   0x000028d9   0xcc  Code  Gb  atan2.o [4]
 bus_clk_khz             0x1fff0544    0x4  Data  Gb  sysinit.o [1]

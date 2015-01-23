@@ -34,6 +34,9 @@
 #include  "calculation.h"
 #include  "power.h"
 #include  "display.h"
+#include  "AngleAcceleration.h"//실똑실醵똑
+
+
 //#include  "isr.h"      //isr
 
 

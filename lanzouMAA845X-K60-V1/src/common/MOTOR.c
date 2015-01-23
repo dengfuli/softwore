@@ -1,6 +1,7 @@
 #include "common.h"
 #include "MOTOR.h"
 #include "include.h"
+
 motor_status motor;
 car_status car;
 

@@ -2005,6 +2005,9 @@
       <name>$PROJ_DIR$\..\..\src\common\alloc.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\..\src\common\AngleAcceleration.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\..\src\common\assert.c</name>
     </file>
     <file>
